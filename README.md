@@ -1,95 +1,109 @@
-# Dayou Content Pipeline
+# Dayou 内容管线 / Content Pipeline
 
-Simple Python pipeline for turning Chinese metaphysics source material into short-form avatar videos for overseas TikTok and Instagram audiences.
+> 大有海外增长内容自动化系统：古典文本 → AI 脚本生成 → HeyGen 视频 → 社交平台发布
 
-## What It Does
+## 这是什么
 
-1. Reads source material from `corpus/`
-2. Generates a weekly batch of 7 short scripts with an LLM
-3. Sends those scripts to HeyGen for avatar video generation
-4. Pushes normalized publish payloads to n8n for final scheduling and posting
+一条自动化内容管线，把中国传统智慧（易经、道德经等）转化为 TikTok/Instagram 短视频，面向海外观众。
 
-The design is intentionally small: one YAML config, a generator, a HeyGen client, an n8n publisher, and a single CLI entrypoint.
+**工作流程：**
+1. 从 `corpus/` 读取古典文本素材
+2. AI 自动生成一周 7 条短视频脚本
+3. 通过 HeyGen 生成 AI avatar 视频
+4. 通过 n8n 自动发布到社交平台
 
-## Project Layout
+## 团队协作
 
-- `config.yaml`: pipeline settings
-- `corpus/`: source material for script generation
-- `scripts/templates/avatar_script.md`: output format contract for generated scripts
-- `scripts/generator.py`: weekly script generation
-- `video/heygen_client.py`: HeyGen API client
-- `publish/scheduler.py`: n8n publishing client
-- `pipeline.py`: CLI entrypoint
-- `CULTURAL_TRANSLATION.md`: translation and framing rules for overseas audiences
+**不需要技术背景也能参与。** 详细操作指南见 [RUNBOOK.md](RUNBOOK.md)。
 
-## Setup
+完全零基础？从这里开始：[GitHub 新手入门指南](docs/github-beginner-guide.md)
+
+| 角色 | 做什么 | 在哪里做 |
+|------|--------|----------|
+| 创始人 | 跑管线、分配任务、看数据 | 终端 + GitHub |
+| 内容负责人 | 提交脚本概念、审核内容 | GitHub Issues |
+| 大师/顾问 | 提供每周 2-3 个概念 | 微信 → GitHub Issue |
+
+## 目录结构
+
+```
+dayou-content/
+├── README.md              # 本文件
+├── RUNBOOK.md              # 非技术人员操作手册
+├── CULTURAL_TRANSLATION.md # 海外受众术语翻译规则
+├── config.yaml             # 管线配置（LLM、HeyGen、发布调度）
+├── team.yaml               # 团队成员与角色
+├── corpus/                 # 古典文本语料库
+│   ├── yijing/             # 易经
+│   ├── daodejing/          # 道德经
+│   └── wisdom/             # 独立智慧语录
+├── scripts/                # 脚本生成模块
+│   ├── generator.py        # AI 批量生成脚本
+│   └── templates/          # 脚本格式模板
+├── video/                  # 视频生成模块
+│   └── heygen_client.py    # HeyGen API 客户端
+├── publish/                # 发布模块
+│   └── scheduler.py        # n8n webhook 发布
+├── pipeline.py             # 主入口（CLI）
+├── workspace/              # 运行时产出（脚本、视频、发布记录）
+├── docs/                   # 文档
+│   └── github-beginner-guide.md  # GitHub 零基础入门
+└── .github/
+    └── ISSUE_TEMPLATE/     # Issue 模板
+        ├── content-idea.md     # 脚本概念提交
+        └── weekly-report.md    # 周报
+```
+
+## 快速开始（技术人员）
 
 ```bash
+# 克隆仓库
+git clone https://github.com/AlyciaBHZ/dayou-content.git
+cd dayou-content
+
+# 安装依赖
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-```
 
-Set API keys:
-
-```bash
+# 设置 API 密钥
 export OPENAI_API_KEY="..."
 export HEYGEN_API_KEY="..."
-export N8N_WEBHOOK_TOKEN="..."
 ```
 
-## Config
-
-All runtime behavior is driven from [config.yaml](/Users/lexa/Desktop/lexa/dayou/dayou-content/config.yaml).
-
-Key sections:
-
-- `corpus`: source directories and selection weights
-- `llm`: OpenAI-compatible chat-completions settings
-- `heygen`: avatar video generation settings
-- `publish`: platform schedule and enabled channels
-- `persona`: brand voice for the avatar
-- `n8n`: webhook transport for publishing
-
-## Usage
-
-Generate a weekly script batch:
+## 常用命令
 
 ```bash
-python3 pipeline.py generate --week-of 2026-04-13
-```
+# 生成一周的脚本
+python3 pipeline.py generate
 
-Dry-run the full flow:
-
-```bash
-python3 pipeline.py full --week-of 2026-04-13 --dry-run
-```
-
-Generate videos for the latest manifest:
-
-```bash
+# 生成视频（需要 HeyGen API key）
 python3 pipeline.py video --wait
-```
 
-Send the latest completed batch to n8n:
-
-```bash
+# 发布到社交平台（需要 n8n webhook）
 python3 pipeline.py publish
+
+# 全流程（生成 → 视频 → 发布）
+python3 pipeline.py full
 ```
 
-## Output
+## 配置
 
-The pipeline writes runtime artifacts to `workspace/`:
+所有配置在 `config.yaml` 中：
 
-- `workspace/scripts/<year-week>/manifest.json`
-- `workspace/scripts/<year-week>/scripts/*.md`
-- `workspace/videos/`
-- `workspace/publish/`
+| 配置项 | 说明 |
+|--------|------|
+| `corpus` | 语料库来源和权重 |
+| `llm` | AI 模型设置（OpenAI 兼容） |
+| `heygen` | Avatar 视频生成设置 |
+| `publish` | 发布平台和时间表 |
+| `persona` | Avatar 人设（The Sage） |
+| `n8n` | 自动发布 webhook |
 
-`manifest.json` is the source of truth between stages. The `video` and `publish` steps update it in place.
+## 相关项目
 
-## Notes
-
-- The `yijing` and `daodejing` corpus files were copied from the omega reference repo as requested.
-- The reference repo only exposed one file for each of those sources, so this pipeline treats them as reusable seed texts and expands variety through weekly angles plus the `wisdom/` quote set.
-- The LLM client uses a simple OpenAI-compatible REST call instead of a heavyweight SDK so the setup stays easy for a solo founder.
+| 项目 | 说明 |
+|------|------|
+| [mysterious](https://github.com/AlyciaBHZ/mysterious) | 大有主产品（排盘 + AI 解读） |
+| [animal-dayou](https://github.com/AlyciaBHZ/animal-dayou) | 宠物命理（楔子产品） |
+| [omega-ancient-texts-analysis](https://github.com/ChronoAIProject/omega-ancient-texts-analysis) | 参考架构：古典文本 AI 分析管线 |
