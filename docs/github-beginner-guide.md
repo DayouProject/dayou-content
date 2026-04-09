@@ -1,3 +1,8 @@
+---
+title: GitHub 入门
+nav_order: 5
+---
+
 # GitHub 零基础入门指南
 
 > 从注册账号到参与 Dayou 内容协作，一步一步教你。
@@ -186,6 +191,9 @@ Follow Dayou for one grounded piece of Eastern wisdom every day.
 
 1. 注册完 GitHub 后，把你的用户名发给项目负责人
 2. 等待邀请邮件，接受邀请
-3. 阅读 [RUNBOOK.md](../RUNBOOK.md)，了解你的每周工作流程
-4. 每周一提交内容概念，每周日提交周报
-5. 有问题随时在 Issue 里提问或微信联系负责人
+3. 阅读 [每周工作流](./workflow) 与 [角色说明](./roles)，先弄清你的职责边界
+4. 如需看仓库原始操作手册，可打开 [RUNBOOK.md（GitHub）](https://github.com/AlyciaBHZ/dayou-content/blob/main/RUNBOOK.md)
+5. 每周一提交内容概念，每周日提交周报
+6. 有问题随时在 Issue 里提问或微信联系负责人
+
+{% include weekly-flow.md %}

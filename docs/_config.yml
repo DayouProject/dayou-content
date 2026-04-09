@@ -1,0 +1,23 @@
+title: 大有团队手册
+description: 大有内容运营与入职协作门户
+lang: zh-CN
+url: ""
+baseurl: ""
+
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: 返回顶部
+nav_sort: case_insensitive
+
+aux_links:
+  GitHub 仓库:
+    - https://github.com/AlyciaBHZ/dayou-content
+  新建 Issue:
+    - https://github.com/AlyciaBHZ/dayou-content/issues/new/choose
+
+footer_content: "Dayou（大有）内容团队手册：给内容运营、大师顾问与协作伙伴的清晰工作入口。"
