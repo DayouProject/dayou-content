@@ -5,70 +5,71 @@ layout: default
 has_toc: false
 ---
 
-# 大有 Dayou 团队手册
+# Dayou 内容运营中台
 
-给内容运营同学、大师顾问与协作伙伴的统一入口。这里不讲代码，只讲每周要做什么、去哪里做、什么不是你的工作。
+Dayou 是一个面向海外市场的中国形而上学 AI 平台；这个仓库负责把知识库概念稳定转成可发布的短视频内容。
 
-## 你会在这里找到什么
+## 3 人协作总图
 
-- 角色边界：谁负责策略、谁负责内容、谁负责文化把关。
-- 每周节奏：周一提选题，周二到周三审脚本，周四出视频，周五到周日发布与复盘。
-- 操作入口：GitHub Issue、微信、内容管线分别在什么场景使用。
+```text
+[知识库负责人]
+    |
+    | [concepts]
+    v
+[Lexa/Pipeline]
+    |
+    | [scripts+videos]
+    v
+[宣发负责人]
+    |
+    | [TikTok / Instagram / Reddit]
+    v
+[数据与反馈]
+```
 
-## 角色卡片
+这不是写代码仓库介绍页。这里讲 3 件事：谁负责、怎么交接、这一周先做什么。
 
-### 创始人
+## 谁负责什么
 
-> **负责范围**：内容管线、产品策略、部署与最终交付。  
-> **主要产出**：跑脚本、生成视频、维护发布节奏、解决流程堵点。  
-> **不负责**：代替内容负责人长期写选题，或代替大师做文化准确性判断。
+| 角色 | 负责什么 | 明确不负责什么 | 主要工作区 | 什么时候出手 |
+|---|---|---|---|---|
+| Lexa（AlyciaBHZ） | 内容管线、`pipeline.py`、`dayou.dev`、Vercel、HeyGen、n8n、周节奏与策略 | 不长期写内容，不运营 TikTok/Instagram，不做日常 Reddit 互动 | 本仓库、终端、Vercel、HeyGen、n8n | 周一接收概念，周二到周四产脚本和视频，异常时随时介入 |
+| 知识库负责人（TBD） | 每周内容概念、脚本准确性审核、文化翻译质量、主知识库维护 | 不改代码，不部署，不跑管线，不管理社媒账号 | GitHub Issue、仓库文档、微信 | 周一前交概念，周二到周三审脚本，周日补知识库修订 |
+| 宣发负责人（TBD） | TikTok/Instagram 发布执行、Reddit 社区互动、数据跟踪、周报 | 不改代码，不部署，不跑管线，不替知识库做文化判断 | TikTok、Instagram、Reddit、GitHub Issue | 周四接视频，周五到周日发布、互动、复盘 |
 
-### 内容负责人
+## 本周优先动作
 
-> **负责范围**：每周选题、脚本审核、账号数据跟踪、社媒账号日常运营。  
-> **主要产出**：内容灵感 Issue、审核意见、周报、账号表现反馈。  
-> **不负责**：改代码、部署系统、修复自动化流程。
+| 角色 | 本周先做什么 | 做到什么程度算完成 |
+|---|---|---|
+| Lexa | 开通 HeyGen 并做 Avatar；跑通前 3 条视频的端到端流程；配置 TikTok Business | 至少 3 条视频从概念走到成片；账号与工具均可登录；发布链路不再卡在账号侧 |
+| 知识库负责人 | 注册 GitHub；读完 [CULTURAL_TRANSLATION.md](https://github.com/AlyciaBHZ/dayou-content/blob/main/CULTURAL_TRANSLATION.md)；提交首个含 3 个概念的 Content Idea Issue | Issue 信息完整，可直接进入脚本生成；每个概念都有经典来源、现代角度、禁区提醒 |
+| 宣发负责人 | 注册 GitHub；开好 TikTok/Instagram 账号；准备手动发布首批测试视频 | 两个平台账号可用；已拿到后台权限；能手动发布并记录链接与基础数据 |
 
-### 大师/顾问
+## 读文档顺序
 
-> **负责范围**：每周提供 2 到 3 个概念，审核传统文化表达是否准确。  
-> **主要产出**：概念方向、文化修正意见、容易误读的提醒。  
-> **不负责**：账号运营、发布执行、技术排障。
+新加入的人先按这个顺序读：
 
-## 快速入口
+1. [角色说明](./roles)：先弄清楚自己负责什么，不负责什么。
+2. [每周工作流](./workflow)：再看交接顺序、异常处理和沟通规则。
+3. [接下来 2 周](./next-steps)：最后直接看自己这两周要交什么。
+
+第一次用 GitHub 的同学，在第 1 步之前先看 [GitHub 零基础入门](./github-beginner-guide)。
+
+## 现在就用哪些入口
+
+| 目的 | 去哪里 | 输出什么 |
+|---|---|---|
+| 提交内容概念 | GitHub Issue | 1 个 Content Idea Issue，内含 2 到 3 个概念 |
+| 审核脚本 | GitHub Issue + `workspace/scripts/` | 明确写“通过 / 需改 / 拒绝”，并指出具体句子 |
+| 接收视频并发布 | GitHub Issue + `workspace/videos/` + 平台后台 | 发布链接、发布时间、异常记录 |
+| 紧急同步 | 微信 | 只处理今天必须解决的事，之后补回 Issue |
+
+## 相关页面
 
 - [角色说明](./roles)
 - [每周工作流](./workflow)
-- [FAQ 与排障](./faq)
+- [接下来 2 周](./next-steps)
+- [FAQ](./faq)
 - [GitHub 零基础入门](./github-beginner-guide)
-- [项目概览 README（GitHub）](https://github.com/AlyciaBHZ/dayou-content/blob/main/README.md)
-- [运营手册 RUNBOOK（GitHub）](https://github.com/AlyciaBHZ/dayou-content/blob/main/RUNBOOK.md)
-- [术语翻译规则（GitHub）](https://github.com/AlyciaBHZ/dayou-content/blob/main/CULTURAL_TRANSLATION.md)
+- [RUNBOOK.md（GitHub）](https://github.com/AlyciaBHZ/dayou-content/blob/main/RUNBOOK.md)
 - [直接新建 Issue](https://github.com/AlyciaBHZ/dayou-content/issues/new/choose)
-
-## 本周时间线
-
-### 周一：提交选题
-
-- 内容负责人整理本周方向并提交 GitHub Issue。
-- 大师/顾问补充 2 到 3 个核心概念或修正表达。
-- 创始人确认输入是否足够进入脚本生成。
-
-### 周二到周三：审核脚本
-
-- 创始人跑内容管线生成本周脚本。
-- 内容负责人先看是否适合平台传播、是否易懂。
-- 大师/顾问再看传统文化表达是否准确、是否有误导。
-
-### 周四：生成视频
-
-- 创始人将定稿脚本送入视频生成与发布队列。
-- 内容负责人确认标题、封面文案、平台节奏是否合理。
-
-### 周五到周日：发布与复盘
-
-- 系统按配置自动发布。
-- 内容负责人持续看账号表现、互动和异常情况。
-- 周日整理周报，为下周选题做准备。
-
-{% include weekly-flow.md %}

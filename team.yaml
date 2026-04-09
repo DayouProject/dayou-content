@@ -1,35 +1,75 @@
 members:
   AlyciaBHZ:
     name: Lexa
-    role: founder
-    responsibilities: [pipeline, product, strategy]
-  # content_lead:
-  #   name: TBD
-  #   role: content_lead
-  #   responsibilities: [scripts, review, publish, social_data]
-  # content_reviewer:
-  #   name: TBD
-  #   role: content_reviewer
-  #   responsibilities: [review, qa, compliance]
+    role: "founder, tech"
+    responsibilities:
+      - 负责内容生产管线与 pipeline.py
+      - 负责 dayou.dev 产品与落地页联动
+      - 负责 Vercel 部署与技术排障
+      - 负责 HeyGen 与 n8n 自动化链路
+      - 负责每周内容生产节奏与策略判断
+    tools:
+      - GitHub Issues
+      - pipeline.py
+      - dayou.dev
+      - Vercel
+      - HeyGen
+      - n8n
+    weekly_deliverables:
+      - 接收并确认本周 2到3个内容概念
+      - 产出首批 3到7条脚本
+      - 生成至少 3条可发布视频
+      - 处理本周所有技术阻塞
+
+  knowledge_lead:
+    name: TBD
+    role: knowledge
+    responsibilities:
+      - 负责每周内容概念与经典来源整理
+      - 负责脚本准确性审核
+      - 负责文化翻译质量把关
+      - 负责主知识库维护
+    tools:
+      - GitHub 网页
+      - GitHub Issues
+      - CULTURAL_TRANSLATION.md
+      - 微信
+    weekly_deliverables:
+      - 每周提交 1个 Content Idea Issue
+      - 每周提供 2到3个内容概念
+      - 每周审完首批 3到7条脚本
+      - 每周更新至少 1处知识库备注或翻译规则
+
+  marketing_lead:
+    name: TBD
+    role: marketing
+    responsibilities:
+      - 负责 TikTok 账号运营与发布执行
+      - 负责 Instagram 账号运营与发布执行
+      - 负责 Reddit 社区互动
+      - 负责内容数据跟踪与周报
+    tools:
+      - TikTok 后台
+      - Instagram 后台
+      - Reddit
+      - GitHub Issues
+      - 微信
+    weekly_deliverables:
+      - 每周发布 3到7条视频
+      - 每天完成 1条 Reddit 互动
+      - 每周记录全部视频链接与基础数据
+      - 每周提交 1个 Weekly Report Issue
 
 social_accounts:
   tiktok:
     handle: "@dayou.wisdom"
     platform: tiktok
-    status: setup_pending
+    status: setup_in_progress
   instagram:
     handle: "@dayou.wisdom"
     platform: instagram
-    status: phase2
-  x_zh:
-    handle: TBD
-    platform: x
-    status: active
-  x_en:
-    handle: TBD
-    platform: x
-    status: active
+    status: setup_in_progress
   reddit:
     primary_subreddit: r/taoism
     secondary: r/astrology
-    status: active
+    status: seeding_pending
