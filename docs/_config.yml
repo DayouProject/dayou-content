@@ -1,12 +1,14 @@
 title: 大有团队手册
 description: 大有内容运营与入职协作门户
 lang: zh-CN
-url: ""
-baseurl: ""
+url: "https://alyciabhz.github.io"
+baseurl: "/dayou-content"
 
-remote_theme: just-the-docs/just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.10.0
 plugins:
   - jekyll-remote-theme
+
+color_scheme: dark
 
 search_enabled: true
 heading_anchors: true
