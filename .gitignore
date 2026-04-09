@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.env
+.env.*
+workspace/scripts/*
+workspace/videos/*
+workspace/publish/*
+!workspace/scripts/.gitkeep
+!workspace/videos/.gitkeep
+!workspace/publish/.gitkeep

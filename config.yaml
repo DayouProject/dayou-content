@@ -1,0 +1,101 @@
+{
+  "project": {
+    "name": "dayou-content",
+    "output_root": "workspace"
+  },
+  "corpus": {
+    "sources": [
+      {
+        "id": "yijing",
+        "title": "易经 / I Ching",
+        "language": "zh",
+        "path": "corpus/yijing",
+        "weight": 3
+      },
+      {
+        "id": "daodejing",
+        "title": "道德经 / Tao Te Ching",
+        "language": "zh",
+        "path": "corpus/daodejing",
+        "weight": 2
+      },
+      {
+        "id": "wisdom",
+        "title": "Dayou Wisdom Seeds",
+        "language": "zh-en",
+        "path": "corpus/wisdom",
+        "weight": 2
+      }
+    ],
+    "weekly_scripts": 7
+  },
+  "llm": {
+    "provider": "openai_compatible",
+    "base_url": "https://api.openai.com/v1",
+    "endpoint": "/chat/completions",
+    "api_key_env": "OPENAI_API_KEY",
+    "model": "gpt-4.1-mini",
+    "temperature": 0.8,
+    "max_tokens": 1200,
+    "timeout_seconds": 90,
+    "json_mode": true
+  },
+  "heygen": {
+    "base_url": "https://api.heygen.com",
+    "api_key_env": "HEYGEN_API_KEY",
+    "timeout_seconds": 60,
+    "polling_interval_seconds": 20,
+    "video": {
+      "width": 1080,
+      "height": 1920
+    },
+    "avatar": {
+      "avatar_id": "REPLACE_WITH_HEYGEN_AVATAR_ID",
+      "avatar_style": "normal",
+      "voice_id": "REPLACE_WITH_HEYGEN_VOICE_ID",
+      "rate": 1.0,
+      "pitch": 0.0,
+      "locale": "en-US"
+    }
+  },
+  "publish": {
+    "channels": [
+      {
+        "platform": "tiktok",
+        "enabled": true,
+        "account_label": "dayou-tiktok"
+      },
+      {
+        "platform": "instagram_reels",
+        "enabled": true,
+        "account_label": "dayou-instagram"
+      }
+    ],
+    "schedule": {
+      "timezone": "America/Los_Angeles",
+      "slots": [
+        {"weekday": "monday", "time": "09:30"},
+        {"weekday": "tuesday", "time": "09:30"},
+        {"weekday": "wednesday", "time": "09:30"},
+        {"weekday": "thursday", "time": "09:30"},
+        {"weekday": "friday", "time": "09:30"},
+        {"weekday": "saturday", "time": "10:00"},
+        {"weekday": "sunday", "time": "10:00"}
+      ]
+    }
+  },
+  "persona": {
+    "name": "Dayou Oracle",
+    "role": "Chinese metaphysics guide for global short-form video",
+    "audience": "overseas TikTok and Instagram viewers interested in Eastern wisdom",
+    "voice": "calm, incisive, reflective, lightly mystical, never preachy",
+    "promise": "translate ancient Chinese texts into practical self-reflection for modern life",
+    "cta": "Follow Dayou for one grounded piece of Eastern wisdom every day."
+  },
+  "n8n": {
+    "base_url": "http://localhost:5678",
+    "webhook_path": "/webhook/dayou-publish",
+    "auth_token_env": "N8N_WEBHOOK_TOKEN",
+    "source_label": "dayou-content-pipeline"
+  }
+}
