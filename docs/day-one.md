@@ -30,11 +30,22 @@ nav_order: 2
 - 你的邮箱会收到 GitHub 邀请邮件
 - 点击邮件里的 "Accept invitation"
 
-### 第 3 步（3 分钟）：读两份必读文档
+### 第 3 步（5 分钟）：装 Claude Code 并 clone 仓库
+- 装 Claude Code：https://docs.claude.com/claude-code
+- 在终端跑：
+  ```bash
+  git clone https://github.com/AlyciaBHZ/dayou-content.git
+  cd dayou-content
+  claude code .
+  ```
+- 在 Claude Code 里输入 `/daily`，看到自己的当日任务
+- 不知道怎么装 Claude Code？看 [GitHub 零基础入门](./github-beginner-guide)
+
+### 第 4 步（3 分钟）：读两份必读文档
 - [角色说明](./roles)：弄清楚你负责什么、不负责什么
 - [文化翻译规则](https://github.com/AlyciaBHZ/dayou-content/blob/main/CULTURAL_TRANSLATION.md)：海外受众的术语翻译边界
 
-### 第 4 步（3 分钟）：提交你的第一个 Content Idea
+### 第 5 步（3 分钟）：提交你的第一个 Content Idea
 - 打开 https://github.com/AlyciaBHZ/dayou-content/issues/new/choose
 - 选 "Content Idea Submission / 内容灵感提交"
 - 按模板填 2-3 个概念（来自易经、道德经、五行等）
@@ -43,7 +54,14 @@ nav_order: 2
 ### 完成
 你已经完成第一天的工作。Lexa 会在 24 小时内回复"已接收"或"需要补齐"。
 
-不会用 GitHub？看 [GitHub 零基础入门](./github-beginner-guide)。
+之后每天上班第一件事：
+```bash
+cd dayou-content
+git pull origin main
+claude code .   # 跑 /daily
+```
+
+**重要：你不需要 git push 任何东西。所有工作通过 GitHub Issues 提交。** 详见 [协作规则](https://github.com/AlyciaBHZ/dayou-content/blob/main/CONTRIBUTING.md)。
 
 ---
 
@@ -59,11 +77,21 @@ nav_order: 2
 - Lexa 把你加进 `dayou-content` 仓库
 - 接受邀请邮件
 
-### 第 3 步（3 分钟）：读两份必读文档
+### 第 3 步（5 分钟）：装 Claude Code 并 clone 仓库
+- 装 Claude Code：https://docs.claude.com/claude-code
+- 在终端跑：
+  ```bash
+  git clone https://github.com/AlyciaBHZ/dayou-content.git
+  cd dayou-content
+  claude code .
+  ```
+- 在 Claude Code 里输入 `/daily`，看到自己的当日任务和发布排期
+
+### 第 4 步（3 分钟）：读两份必读文档
 - [角色说明](./roles)：弄清楚你负责什么
 - [每周工作流](./workflow)：看你周四到周日的工作节奏
 
-### 第 4 步（3 分钟）：准备社媒账号
+### 第 5 步（3 分钟）：准备社媒账号
 - 打开 [工具清单](./tools)，看 TikTok / Instagram 账号注册要求
 - 不要立刻注册账号，先和 Lexa 对齐账号信息（账号名、头像、简介）
 - 账号注册完成后，把账号链接发到 Lexa 那里登记
@@ -71,7 +99,14 @@ nav_order: 2
 ### 完成
 你已经完成第一天的准备。本周内会进入第一次发布测试。
 
-不会用 GitHub？看 [GitHub 零基础入门](./github-beginner-guide)。
+之后每天上班第一件事：
+```bash
+cd dayou-content
+git pull origin main
+claude code .   # 跑 /daily
+```
+
+**重要：你不需要 git push 任何东西。** 详见 [协作规则](https://github.com/AlyciaBHZ/dayou-content/blob/main/CONTRIBUTING.md)。
 
 ---
 

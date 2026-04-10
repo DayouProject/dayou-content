@@ -48,15 +48,16 @@ nav_order: 3
 
 ## Git 协作规则
 
-**只有 Lexa 能 push 到 main 分支。** 知识库负责人和宣发负责人都不需要 clone 仓库或装 git。
+**所有团队成员都应该 clone 仓库到本地，用 Claude Code 跑 `/daily` 看任务。但只有 Lexa 能 push 到 main 分支。**
 
-| 谁 | 能做什么 | 不能做什么 |
-|----|---------|----------|
-| 知识库负责人 | 在 GitHub 网页提 Issue、评论、写周报 | 不要 clone repo、不要 push 任何分支 |
-| 宣发负责人 | 在 GitHub 网页看脚本、提 Issue、提周报 | 不要 clone repo、不要改配置文件 |
+| 谁 | 应该做 | 不应该做 |
+|----|--------|----------|
+| 知识库负责人 | clone 仓库、跑 `/daily`、在 GitHub 网页提 Issue / 评论 / 写周报 | 不要 git push 任何分支 |
+| 宣发负责人 | clone 仓库、跑 `/daily`、在 GitHub 网页看脚本 / 提周报 | 不要 git push 任何分支 |
 | Lexa | 全部 | — |
 
-详见 [协作规则](https://github.com/AlyciaBHZ/dayou-content/blob/main/CONTRIBUTING.md)。
+**为什么 clone：** 让你能在本地用 `/daily` 看自己的任务、看本周脚本、看团队进度。
+**为什么不 push：** Vercel 部署门禁 + 代码审查需要，详见 [协作规则](https://github.com/AlyciaBHZ/dayou-content/blob/main/CONTRIBUTING.md)。
 
 ## 边界速查
 

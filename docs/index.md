@@ -13,7 +13,7 @@ has_toc: false
 > **第一次来？** 直接看 [新人第一天](./day-one)，10 分钟搞定上手。
 
 {: .important }
-> **重要协作规则：只有 Lexa 能 push 到 main 分支。** 团队成员的工作完全在 GitHub 网页上完成（提 Issue、评论、写周报），不需要 clone 仓库，不需要装 git。详见 [协作规则](https://github.com/AlyciaBHZ/dayou-content/blob/main/CONTRIBUTING.md)。
+> **重要协作规则：clone 仓库本地用 `/daily` 看任务，但不要 push 到 main。** 所有团队成员都鼓励 clone 仓库 + 装 Claude Code，每天跑 `/daily` 看自己的任务。提交工作通过 GitHub Issues。详见 [协作规则](https://github.com/AlyciaBHZ/dayou-content/blob/main/CONTRIBUTING.md)。
 
 ## 三人协作总图
 
