@@ -1,8 +1,39 @@
-# Dayou 内容管线 / Content Pipeline
+# Dayou 协作中台 / Collaboration Hub
 
-> 大有海外增长内容自动化系统：古典文本 → AI 脚本生成 → HeyGen 视频 → 社交平台发布
+> Dayou 三个核心仓库的统一协作入口：仓库分工、团队手册、内容资产与协作工作流都从这里开始。
+
+## 先看这个
+
+如果你来这里是为了理解“这件事该在哪个仓库推进”，先看：
+
+- `docs/repo-scope.md`
+- `docs/workflow.md`
+- `docs/github-beginner-guide.md`
+
+这三个文件对应三件事：
+
+1. 三个仓库各自负责什么
+2. 想法如何变成正式 Issue，再进入实现
+3. 零基础协作者如何上手 GitHub
+
+## 三个核心仓库
+
+| 仓库 | 核心 scope |
+|------|------|
+| [mysterious](https://github.com/DayouProject/mysterious) | 主产品、排盘、AI 解读、正式线上功能 |
+| [animal-dayou](https://github.com/DayouProject/animal-dayou) | 宠物方向产品 |
+| [dayou-content](https://github.com/DayouProject/dayou-content) | 协作中台、内容资产、团队手册 |
 
 ## 这是什么
+
+`dayou-content` 仍然承载内容和知识资产，但它现在同时承担更高一层的作用：
+
+- 统一说明三个仓库的边界
+- 给不会写代码的 collaborator 提供入口
+- 承载 GitHub Pages 团队手册
+- 沉淀内容资产、知识库和流程文档
+
+其中内容管线本身依然是这个仓库的重要组成部分。
 
 一条自动化内容管线，把中国传统智慧（易经、道德经等）转化为 TikTok/Instagram 短视频，面向海外观众。
 
@@ -104,6 +135,6 @@ python3 pipeline.py full
 
 | 项目 | 说明 |
 |------|------|
-| [mysterious](https://github.com/AlyciaBHZ/mysterious) | 大有主产品（排盘 + AI 解读） |
-| [animal-dayou](https://github.com/AlyciaBHZ/animal-dayou) | 宠物命理（楔子产品） |
+| [mysterious](https://github.com/DayouProject/mysterious) | 大有主产品（排盘 + AI 解读） |
+| [animal-dayou](https://github.com/DayouProject/animal-dayou) | 宠物命理（楔子产品） |
 | [omega-ancient-texts-analysis](https://github.com/ChronoAIProject/omega-ancient-texts-analysis) | 参考架构：古典文本 AI 分析管线 |
