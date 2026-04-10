@@ -11,7 +11,7 @@ nav_order: 6
 
 `https://dayouproject.github.io/dayou-content/`
 
-首页已经包含“一页上手 + 可直接复制到 agent 的 bootstrap”。  
+首页已经包含“一页执行入口 + 首页链接复制 + gh auth / clone / 上下文顺序”。  
 只有当你想单独给 agent 一个专门的说明页时，再用这页。
 
 如果你已经配好 `Claude / Cursor / Codex` 其中之一，把这页链接贴给它，它也可以继续带你完成后面的流程。
