@@ -1,6 +1,7 @@
 ---
 title: 新人第一天
 nav_order: 2
+nav_exclude: true
 ---
 
 # 新人第一天

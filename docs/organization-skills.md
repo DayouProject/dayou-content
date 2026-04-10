@@ -1,6 +1,7 @@
 ---
 title: 组织级 AI Skills
 nav_order: 7
+nav_exclude: true
 ---
 
 # 组织级 AI Skills

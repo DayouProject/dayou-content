@@ -1,6 +1,7 @@
 ---
 title: AI 接管入口
 nav_order: 6
+nav_exclude: true
 ---
 
 # AI 接管入口

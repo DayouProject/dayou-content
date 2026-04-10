@@ -1,6 +1,7 @@
 ---
 title: 工具清单
 nav_order: 11
+nav_exclude: true
 ---
 
 # 工具清单

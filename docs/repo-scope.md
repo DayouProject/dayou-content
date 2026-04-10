@@ -1,6 +1,7 @@
 ---
 title: 仓库分工
 nav_order: 3
+nav_exclude: true
 ---
 
 # 仓库分工 / Repo Scope

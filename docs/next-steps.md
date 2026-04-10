@@ -1,6 +1,7 @@
 ---
 title: 接下来 2 周
 nav_order: 13
+nav_exclude: true
 ---
 
 # 接下来 2 周

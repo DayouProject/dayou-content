@@ -1,6 +1,6 @@
 ---
 title: /daily 模板
-nav_order: 9
+nav_order: 4
 ---
 
 # /daily 模板

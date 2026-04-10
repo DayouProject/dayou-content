@@ -1,6 +1,7 @@
 ---
 title: GitHub 入门
 nav_order: 10
+nav_exclude: true
 ---
 
 # GitHub 零基础入门指南

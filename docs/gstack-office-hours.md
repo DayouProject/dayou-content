@@ -1,6 +1,6 @@
 ---
 title: gstack Office Hours
-nav_order: 8
+nav_order: 3
 ---
 
 # gstack Office Hours

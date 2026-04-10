@@ -1,6 +1,7 @@
 ---
 title: FAQ
 nav_order: 12
+nav_exclude: true
 ---
 
 # FAQ
