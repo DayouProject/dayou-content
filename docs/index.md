@@ -9,29 +9,29 @@ has_toc: false
   <p class="portal-kicker">Human Language First</p>
   <h1 class="hero-title">Dayou 协作门户</h1>
   <p class="hero-lead">
-    三个核心仓库的统一入口。先判断事情属于哪个仓库，再把自然语言需求整理成正式 Issue，最后进入实现、上线和验证。
+    三个核心仓库的统一入口。先配置好一个 AI 入口，再把 Dayou 的 AI 接管页贴给它，让它继续带你判断仓库、整理问题、准备 office hours、生成 daily 和 Issue 草稿。
     这里默认你不写代码，也默认你可以先用 AI 把问题问清楚。
   </p>
   <div class="hero-actions">
-    <a class="portal-button primary" href="./repo-scope">先判断去哪个仓库</a>
-    <a class="portal-button secondary" href="./workflow">看标准工作流</a>
-    <a class="portal-button secondary" href="./github-beginner-guide">零基础协作怎么开始</a>
+    <a class="portal-button primary" href="./ai-setup">先配置 AI</a>
+    <a class="portal-button secondary" href="./ai-handoff">把链接交给 AI</a>
+    <a class="portal-button secondary" href="./repo-scope">再判断去哪个仓库</a>
   </div>
   <div class="signal-grid">
     <div class="signal-card">
-      <span class="signal-label">默认工具</span>
-      <strong>浏览器 + GitHub + AI</strong>
+      <span class="signal-label">默认起点</span>
+      <strong>浏览器 + GitHub + 一个 AI</strong>
       <p>不需要 clone 仓库，不需要本地开发环境，不需要先学代码。</p>
+    </div>
+    <div class="signal-card">
+      <span class="signal-label">AI 接管</span>
+      <strong>一条链接给 AI 继续带路</strong>
+      <p>配置好 AI 后，把 Dayou 的 AI 接管入口页贴给它，它就应该能继续帮你做 repo 路由、office hours、daily 和 Issue 草稿。</p>
     </div>
     <div class="signal-card">
       <span class="signal-label">正式留痕</span>
       <strong>所有结论回到 Issue</strong>
       <p>微信可以提醒，AI 可以帮你整理，但正式决定、需求、验收都回到 GitHub Issue。</p>
-    </div>
-    <div class="signal-card">
-      <span class="signal-label">三个仓库</span>
-      <strong>平级分工，不是主次</strong>
-      <p>`mysterious`、`animal-dayou`、`dayou-content` 同等重要，只是解决的问题不同。</p>
     </div>
   </div>
 </div>
@@ -69,10 +69,14 @@ has_toc: false
 <section class="section-block">
   <div class="section-head">
     <span class="section-kicker">Common Starts</span>
-    <h2>你现在大概率属于这四种状态之一</h2>
+    <h2>你现在大概率属于这五种状态之一</h2>
     <p>不用先想技术细节，先找到你当前的入口。</p>
   </div>
   <div class="triage-grid">
+    <div class="triage-card">
+      <h3>我还没配 AI</h3>
+      <p>先选一个能工作的 AI 入口，再把 Dayou 的 AI 接管页贴给它，不要一上来学复杂本地工具。</p>
+    </div>
     <div class="triage-card">
       <h3>我有一个新想法</h3>
       <p>先用 AI 或 gstack 把问题、目标、done 标准整理清楚，再开正式 Issue。</p>
@@ -135,6 +139,14 @@ has_toc: false
   </div>
   <div class="reading-grid">
     <div class="reading-card">
+      <h3><a href="./ai-setup">AI 配置</a></h3>
+      <p>先把 AI 入口配好，知道该用哪条路线，知道什么叫配置完成。</p>
+    </div>
+    <div class="reading-card">
+      <h3><a href="./ai-handoff">AI 接管入口</a></h3>
+      <p>把这一页直接贴给 AI，让它继续带你做 repo 路由、office hours、daily 和 Issue 草稿。</p>
+    </div>
+    <div class="reading-card">
       <h3><a href="./repo-scope">仓库分工</a></h3>
       <p>先把三个仓库的职责边界看清楚，减少后续来回搬运。</p>
     </div>
@@ -148,7 +160,7 @@ has_toc: false
     </div>
     <div class="reading-card">
       <h3><a href="./faq">FAQ</a></h3>
-      <p>权限、手机协作、Issue 用法、是否需要本地工具，这里一次看清楚。</p>
+      <p>权限、手机协作、Issue 用法、AI 怎么配、office hours 和 daily 的边界，这里一次看清楚。</p>
     </div>
   </div>
 </section>
@@ -160,12 +172,16 @@ has_toc: false
   </div>
   <div class="reading-grid">
     <div class="reading-card">
-      <h3><a href="./tools">工具清单</a></h3>
-      <p>默认需要什么，不需要什么，哪些工具只是可选增强。</p>
+      <h3><a href="./organization-skills">组织级 AI Skills</a></h3>
+      <p>统一不同 AI 客户端的行为，让 `/route`、`/issue`、`/office-hours`、`/daily` 有同一套含义。</p>
     </div>
     <div class="reading-card">
       <h3><a href="./day-one">新人第一天</a></h3>
       <p>给第一次加入的人一条最短上手路径，不靠经验传承。</p>
+    </div>
+    <div class="reading-card">
+      <h3><a href="./tools">工具清单</a></h3>
+      <p>默认需要什么，不需要什么，哪些工具只是可选增强。</p>
     </div>
     <div class="reading-card">
       <h3><a href="./next-steps">接下来 2 周</a></h3>

@@ -1,6 +1,6 @@
 ---
 title: FAQ
-nav_order: 8
+nav_order: 10
 ---
 
 # FAQ
@@ -34,13 +34,76 @@ Dayou 现在是一个多仓库系统，不是单一项目。
 
 默认不需要。
 
+### 我应该先配 GitHub，还是先配 AI？
+
+两者都要，但 Dayou 现在默认是 `GitHub + 一个 AI 入口` 一起工作。
+
+如果你还没配 AI，先看 [AI 配置](./ai-setup)。
+
 ### 我应该先看哪一页？
 
 按这个顺序：
 
-1. [仓库分工](./repo-scope)
-2. [每周工作流](./workflow)
-3. [GitHub 零基础入门](./github-beginner-guide)
+1. [AI 配置](./ai-setup)
+2. [AI 接管入口](./ai-handoff)
+3. [仓库分工](./repo-scope)
+4. [每周工作流](./workflow)
+5. [GitHub 零基础入门](./github-beginner-guide)
+
+## AI 相关
+
+### 我到底该用哪个 AI？
+
+默认推荐顺序：
+
+1. ChatGPT 或 Claude 网页版
+2. Cursor
+3. Codex / Claude Code
+
+如果你只是想先参与协作，不要把“会不会本地 AI 工具”当成前置门槛。
+
+### 我必须会 Cursor、Codex 或 Claude Code 吗？
+
+默认不需要。
+
+Dayou 真正需要的是：
+
+- 你有一个 AI 入口
+- 这个 AI 能读 Dayou 的页面
+- 这个 AI 能帮你走后面的流程
+
+### 我把哪个链接贴给 AI？
+
+优先贴这个：
+
+`https://dayouproject.github.io/dayou-content/ai-handoff/`
+
+或者直接打开 [AI 接管入口](./ai-handoff)。
+
+### AI 读不了链接怎么办？
+
+直接打开 [AI 接管入口](./ai-handoff)，把整页内容复制进去。
+
+### gstack office hours 是日常入口吗？
+
+不是。
+
+它更像专项技术咨询入口。
+
+默认顺序是：
+
+1. 先让 AI 帮你整理问题
+2. 再决定是否需要 office hours
+
+### `/daily` 是什么？
+
+这是 Dayou 希望 AI 统一支持的一个组织级动作：
+
+- 读取当前上下文
+- 压缩成今天的 daily
+- 告诉你今天最重要的 3 件事和 blockers
+
+如果你想让 AI 直接做这个，告诉它 `/daily` 即可。
 
 ## GitHub 相关
 
@@ -55,6 +118,10 @@ Dayou 现在是一个多仓库系统，不是单一项目。
 ### 我需要 clone 仓库吗？
 
 默认不需要。
+
+### 我需要先开 Issue，还是先让 AI 帮我整理？
+
+默认先让 AI 帮你整理，再开 Issue。
 
 ### Issue 模板没有显示怎么办？
 
@@ -91,6 +158,20 @@ Dayou 现在是一个多仓库系统，不是单一项目。
 
 正式版本发 GitHub Issue。  
 微信只用来提醒紧急问题。
+
+### 我什么时候该用 office hours？
+
+当需求合理，但技术路径不清楚时。
+
+比如：
+
+- 自动化能不能做
+- 现有技术栈是否合适
+- 第一版最小可交付怎么切
+
+### 我什么时候该用 `/daily`？
+
+当你想让 AI 帮你把当前仓库上下文压缩成今天的行动清单时。
 
 ### 什么时候该直接找 Lexa？
 
@@ -130,3 +211,4 @@ Dayou 现在是一个多仓库系统，不是单一项目。
 - 紧急问题：微信
 - 正式需求：GitHub Issue
 - 不确定归属：先看 [仓库分工](./repo-scope)，再问 AI
+- 不知道 AI 怎么配：看 [AI 配置](./ai-setup)

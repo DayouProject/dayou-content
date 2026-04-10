@@ -1,11 +1,23 @@
 ---
 title: GitHub 入门
-nav_order: 6
+nav_order: 8
 ---
 
 # GitHub 零基础入门指南
 
 > 从注册账号到正式参与 Dayou 协作。预计时间：15 分钟。
+
+## 第零步：先准备一个 AI 入口
+
+在 Dayou 里，GitHub 和 AI 是配套使用的。
+
+如果你还没准备好 AI，先看 [AI 配置](./ai-setup)。
+
+目标不是先学复杂工具，而是先确保：
+
+- 你有一个能工作的 AI 入口
+- 它能读 Dayou 页面
+- 它能帮你整理问题，再进入 GitHub
 
 ## 第一步：注册 GitHub 账号
 
@@ -60,6 +72,10 @@ Lexa 会邀请你进入需要的仓库。
 
 如果你的想法还很模糊，先问 AI。
 
+如果你想让 AI 直接进入 Dayou 模式，可以先把这页贴给它：
+
+- [AI 接管入口](./ai-handoff)
+
 你至少要先问清楚：
 
 1. 这个想法到底在解决什么问题
@@ -110,12 +126,14 @@ Lexa 会邀请你进入需要的仓库。
 
 - 不需要学 `git` 命令
 - 不需要学本地开发
-- 不需要装 Claude Code
-- 不需要装 Codex CLI
+- 不需要先装 Claude Code
+- 不需要先装 Codex CLI
 - 不需要碰 Vercel
 
 ## 下一步
 
-1. 看 [仓库分工](./repo-scope)
-2. 看 [每周工作流](./workflow)
-3. 如果要提需求，先问 AI，再开 Issue
+1. 看 [AI 配置](./ai-setup)
+2. 看 [AI 接管入口](./ai-handoff)
+3. 看 [仓库分工](./repo-scope)
+4. 看 [每周工作流](./workflow)
+5. 如果要提需求，先问 AI，再开 Issue
