@@ -1,0 +1,299 @@
+body,
+.site-nav,
+.search-input,
+.main-content {
+  font-family: "Avenir Next", "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.site-title {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Times New Roman", "Noto Serif SC", serif;
+  letter-spacing: -0.02em;
+}
+
+.side-bar {
+  background:
+    linear-gradient(180deg, rgba(16, 42, 67, 0.98) 0%, rgba(20, 41, 61, 0.96) 56%, rgba(111, 61, 39, 0.94) 120%);
+  border-right: 1px solid rgba(255, 244, 229, 0.12);
+}
+
+.site-header,
+.site-footer,
+.main-header {
+  border-color: rgba(42, 61, 79, 0.12);
+}
+
+.site-title,
+.site-button,
+.nav-list .nav-list-link,
+.nav-list .nav-list-expander,
+.search-label,
+.aux-nav-list-item .site-button {
+  color: #f7f1e8;
+}
+
+.nav-list .nav-list-link:hover,
+.nav-list .nav-list-expander:hover,
+.aux-nav-list-item .site-button:hover {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+  color: #fffdf8;
+}
+
+.nav-list .nav-list-item .nav-list-link.active,
+.nav-list .nav-list-item .nav-list-expander.active {
+  background-image: linear-gradient(135deg, rgba(24, 152, 143, 0.92), rgba(217, 119, 6, 0.88));
+  border-radius: 999px;
+  color: #fffdf8;
+  font-weight: 700;
+}
+
+.search {
+  background: transparent;
+}
+
+.search-input {
+  background: rgba(255, 249, 240, 0.14);
+  border: 1px solid rgba(255, 249, 240, 0.18);
+  border-radius: 999px;
+  color: #fffdf8;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 249, 240, 0.75);
+}
+
+.main {
+  background:
+    radial-gradient(circle at top right, rgba(217, 119, 6, 0.14), transparent 28%),
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.12), transparent 26%),
+    linear-gradient(180deg, #f7f0e3 0%, #fdf9f2 48%, #f6efe2 100%);
+}
+
+.main-content-wrap {
+  background: transparent;
+}
+
+.hero-shell {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  margin: 0 0 2rem;
+  border: 1px solid rgba(20, 41, 61, 0.08);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(255, 209, 102, 0.18), transparent 35%),
+    linear-gradient(135deg, rgba(255, 250, 242, 0.96), rgba(247, 240, 227, 0.96));
+  box-shadow: 0 20px 48px rgba(20, 41, 61, 0.08);
+}
+
+.hero-shell::after {
+  content: "";
+  position: absolute;
+  right: -3rem;
+  bottom: -4rem;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.14), rgba(217, 119, 6, 0.12));
+  filter: blur(2px);
+}
+
+.portal-kicker {
+  margin: 0 0 0.75rem;
+  color: #9a5b2d;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 0.94;
+}
+
+.hero-lead {
+  position: relative;
+  z-index: 1;
+  max-width: 46rem;
+  margin: 1rem 0 0;
+  color: #344b5f;
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.hero-actions,
+.repo-grid,
+.triage-grid,
+.flow-grid,
+.reading-grid,
+.signal-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-actions {
+  position: relative;
+  z-index: 1;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, max-content));
+  margin: 1.5rem 0 1rem;
+}
+
+.portal-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.2rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(20, 41, 61, 0.08);
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.portal-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(20, 41, 61, 0.12);
+}
+
+.portal-button.primary {
+  color: #fffaf2;
+  background: linear-gradient(135deg, #0f766e, #145a7a);
+}
+
+.portal-button.secondary {
+  color: #16324a;
+  background: rgba(255, 250, 242, 0.9);
+}
+
+.signal-grid,
+.repo-grid,
+.triage-grid,
+.flow-grid,
+.reading-grid {
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.signal-card,
+.repo-card,
+.triage-card,
+.flow-card,
+.reading-card,
+.rule-banner {
+  position: relative;
+  overflow: hidden;
+  padding: 1.2rem 1.25rem;
+  border: 1px solid rgba(20, 41, 61, 0.08);
+  border-radius: 22px;
+  background: rgba(255, 250, 242, 0.92);
+  box-shadow: 0 10px 30px rgba(20, 41, 61, 0.05);
+}
+
+.signal-card::before,
+.repo-card::before,
+.triage-card::before,
+.flow-card::before,
+.reading-card::before,
+.rule-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(15, 118, 110, 0.9), rgba(217, 119, 6, 0.85));
+}
+
+.signal-label,
+.repo-tag,
+.section-kicker,
+.step-number {
+  display: inline-block;
+  color: #9a5b2d;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.repo-card {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+.repo-card h2,
+.triage-card h3,
+.flow-card h3,
+.reading-card h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.45rem;
+  font-size: 1.2rem;
+}
+
+.rule-banner {
+  margin: 1.5rem 0 2rem;
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.1), rgba(217, 119, 6, 0.08));
+}
+
+.rule-banner p,
+.signal-card p,
+.repo-card p,
+.triage-card p,
+.flow-card p,
+.reading-card p {
+  margin-bottom: 0;
+  color: #466073;
+}
+
+.section-block {
+  margin: 2.2rem 0;
+}
+
+.section-head {
+  max-width: 42rem;
+  margin-bottom: 1rem;
+}
+
+.section-head h2 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-head p {
+  margin-bottom: 0;
+  color: #4d6579;
+}
+
+.compact-list {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.compact-list li + li {
+  margin-top: 0.45rem;
+}
+
+.reading-card a,
+.repo-card strong {
+  color: #14293d;
+}
+
+@media (max-width: 50rem) {
+  .hero-shell {
+    padding: 1.5rem;
+    border-radius: 24px;
+  }
+
+  .hero-title {
+    font-size: 2.3rem;
+  }
+
+  .portal-button {
+    width: 100%;
+  }
+}

@@ -5,80 +5,175 @@ layout: default
 has_toc: false
 ---
 
-# Dayou 协作门户
+<div class="hero-shell">
+  <p class="portal-kicker">Human Language First</p>
+  <h1 class="hero-title">Dayou 协作门户</h1>
+  <p class="hero-lead">
+    三个核心仓库的统一入口。先判断事情属于哪个仓库，再把自然语言需求整理成正式 Issue，最后进入实现、上线和验证。
+    这里默认你不写代码，也默认你可以先用 AI 把问题问清楚。
+  </p>
+  <div class="hero-actions">
+    <a class="portal-button primary" href="./repo-scope">先判断去哪个仓库</a>
+    <a class="portal-button secondary" href="./workflow">看标准工作流</a>
+    <a class="portal-button secondary" href="./github-beginner-guide">零基础协作怎么开始</a>
+  </div>
+  <div class="signal-grid">
+    <div class="signal-card">
+      <span class="signal-label">默认工具</span>
+      <strong>浏览器 + GitHub + AI</strong>
+      <p>不需要 clone 仓库，不需要本地开发环境，不需要先学代码。</p>
+    </div>
+    <div class="signal-card">
+      <span class="signal-label">正式留痕</span>
+      <strong>所有结论回到 Issue</strong>
+      <p>微信可以提醒，AI 可以帮你整理，但正式决定、需求、验收都回到 GitHub Issue。</p>
+    </div>
+    <div class="signal-card">
+      <span class="signal-label">三个仓库</span>
+      <strong>平级分工，不是主次</strong>
+      <p>`mysterious`、`animal-dayou`、`dayou-content` 同等重要，只是解决的问题不同。</p>
+    </div>
+  </div>
+</div>
 
-这是 Dayou 三个核心仓库的统一协作入口。这里不假定你会写代码，也不假定你属于某个固定岗位。这里回答的是：项目现在在做什么、你该去哪个仓库、想法如何变成正式 Issue，再进入实现。
+<div class="rule-banner">
+  <span class="section-kicker">Core Rule</span>
+  <p>模糊想法可以先和 AI 讨论，但团队真正采用什么、做什么、什么时候做，必须留在 GitHub Issue 里，不能只停留在聊天窗口。</p>
+</div>
 
-{: .important }
-> **第一次来？** 先看 [每周工作流](./workflow)，再看 [GitHub 零基础入门](./github-beginner-guide)。默认协作方式是浏览器 + GitHub + AI，不需要本地开发环境。
+<section class="section-block">
+  <div class="section-head">
+    <span class="section-kicker">Three Scopes</span>
+    <h2>先判断你的事情该进哪个仓库</h2>
+    <p>Dayou 现在不是单仓库工作方式。先判断归属，后面的讨论、优先级和实现才不会跑偏。</p>
+  </div>
+  <div class="repo-grid">
+    <a class="repo-card" href="https://github.com/DayouProject/mysterious">
+      <span class="repo-tag">主产品</span>
+      <h2>mysterious</h2>
+      <p>排盘、AI 解读、线上功能、转化、自动化、用户体验。凡是直接影响主产品的需求，优先去这里。</p>
+    </a>
+    <a class="repo-card" href="https://github.com/DayouProject/animal-dayou">
+      <span class="repo-tag">宠物产品</span>
+      <h2>animal-dayou</h2>
+      <p>宠物方向的功能、体验、反馈、增长。只要需求核心对象是宠物产品，就不要混到主产品仓库里。</p>
+    </a>
+    <a class="repo-card" href="https://github.com/DayouProject/dayou-content">
+      <span class="repo-tag">协作中台</span>
+      <h2>dayou-content</h2>
+      <p>协作规则、团队手册、内容资产、知识文档、统一入口。这里解决的是“大家怎么对齐”。</p>
+    </a>
+  </div>
+</section>
 
-{: .important }
-> **核心规则：所有正式需求、反馈、决定都留在 GitHub Issue。** 微信只处理紧急情况；AI 或外部咨询先帮你把问题问清楚，但最终结论要回到 Issue。
+<section class="section-block">
+  <div class="section-head">
+    <span class="section-kicker">Common Starts</span>
+    <h2>你现在大概率属于这四种状态之一</h2>
+    <p>不用先想技术细节，先找到你当前的入口。</p>
+  </div>
+  <div class="triage-grid">
+    <div class="triage-card">
+      <h3>我有一个新想法</h3>
+      <p>先用 AI 或 gstack 把问题、目标、done 标准整理清楚，再开正式 Issue。</p>
+    </div>
+    <div class="triage-card">
+      <h3>我发现一个问题</h3>
+      <p>先确认影响的是哪个仓库，再把现象、证据、截图、链接放进对应 Issue。</p>
+    </div>
+    <div class="triage-card">
+      <h3>我不知道该去哪</h3>
+      <p>先看仓库分工。如果还不确定，先问 AI 帮你判断归属，再去最相关的仓库留痕。</p>
+    </div>
+    <div class="triage-card">
+      <h3>我不会 GitHub</h3>
+      <p>直接看零基础入门。默认模式就是浏览器协作，不要求你装本地工具链。</p>
+    </div>
+  </div>
+</section>
 
-## 三个核心仓库
+<section class="section-block">
+  <div class="section-head">
+    <span class="section-kicker">Workflow</span>
+    <h2>标准协作流程只有五步</h2>
+    <p>它的重点不是流程感，而是让上下文、判断和结果都可追踪。</p>
+  </div>
+  <div class="flow-grid">
+    <div class="flow-card">
+      <span class="step-number">01</span>
+      <h3>先看上下文</h3>
+      <p>看目标仓库的 README、TODO 和 open Issues，避免重复提需求，也避免问一个已经在做的问题。</p>
+    </div>
+    <div class="flow-card">
+      <span class="step-number">02</span>
+      <h3>先问 AI</h3>
+      <p>先把问题范围、可行性、最小版本和 done 标准整理出来，不让模糊想法直接进仓库。</p>
+    </div>
+    <div class="flow-card">
+      <span class="step-number">03</span>
+      <h3>提交正式 Issue</h3>
+      <p>把问题、目标、证据、优先级理由、AI 判断都写进去，让需求从聊天变成系统的一部分。</p>
+    </div>
+    <div class="flow-card">
+      <span class="step-number">04</span>
+      <h3>Lexa 决策并实现</h3>
+      <p>是否做、什么时候做、技术怎么落地，都在同一个 Issue 里持续更新。</p>
+    </div>
+    <div class="flow-card">
+      <span class="step-number">05</span>
+      <h3>回到原 Issue 验证</h3>
+      <p>上线和验收也回到原地，不让需求在私聊里结案。</p>
+    </div>
+  </div>
+</section>
 
-```mermaid
-flowchart LR
-    A[mysterious<br/>主产品] --> D[GitHub Issues]
-    B[animal-dayou<br/>宠物产品] --> D
-    C[dayou-content<br/>文档与内容资产] --> D
-    D --> E[Lexa 实现 / 决策]
-    E --> D
+<section class="section-block">
+  <div class="section-head">
+    <span class="section-kicker">Reading Path</span>
+    <h2>20 分钟内完成上手</h2>
+    <p>如果你是第一次加入，按这个顺序读就够了。</p>
+  </div>
+  <div class="reading-grid">
+    <div class="reading-card">
+      <h3><a href="./repo-scope">仓库分工</a></h3>
+      <p>先把三个仓库的职责边界看清楚，减少后续来回搬运。</p>
+    </div>
+    <div class="reading-card">
+      <h3><a href="./workflow">每周工作流</a></h3>
+      <p>看一个想法如何从自然语言进入正式系统，再进入实现和验证。</p>
+    </div>
+    <div class="reading-card">
+      <h3><a href="./github-beginner-guide">GitHub 零基础入门</a></h3>
+      <p>只讲注册、接受邀请、提交 Issue 这些真正需要的动作。</p>
+    </div>
+    <div class="reading-card">
+      <h3><a href="./faq">FAQ</a></h3>
+      <p>权限、手机协作、Issue 用法、是否需要本地工具，这里一次看清楚。</p>
+    </div>
+  </div>
+</section>
 
-    style A fill:#2a3a4f,stroke:#6f9bcf,color:#fff
-    style B fill:#4f3a2a,stroke:#cf9b6f,color:#fff
-    style C fill:#3a2a4f,stroke:#9b6fcf,color:#fff
-    style D fill:#243c2f,stroke:#58b07c,color:#fff
-    style E fill:#4a2f2f,stroke:#d47b7b,color:#fff
-```
-
-这三个仓库同等重要，只是职责不同：
-
-- `mysterious`：主产品，排盘、AI 解读、正式线上功能
-- `animal-dayou`：宠物方向产品
-- `dayou-content`：文档、内容资产、协作说明、团队手册
-
-## 你该去哪个仓库
-
-| 你现在的事情 | 应该去哪里 |
-|------|------|
-| 提产品功能、自动化、用户体验需求 | `mysterious` |
-| 提宠物产品相关需求或反馈 | `animal-dayou` |
-| 看团队手册、协作说明、内容文档 | `dayou-content` |
-| 不确定归属，但需要正式留痕 | 先在最相关的仓库开 Issue，不确定就问 AI 后再决定 |
-
-## 新协作工作流
-
-1. 先看项目上下文：`README`、`TODO`、open Issues
-2. 先问 AI 或外部咨询，把模糊想法整理清楚
-3. 把整理后的内容提交成具体 GitHub Issue
-4. Lexa 在 Issue 里判断是否做、何时做、怎么做
-5. 实现、上线、验证都回到同一个 Issue 留痕
-
-完整说明见 [每周工作流](./workflow)。
-
-## 阅读路径
-
-新加入按这个顺序读，20 分钟以内：
-
-1. **仓库分工**：[仓库分工](./repo-scope) — 先判断你的事情属于哪个仓库
-2. **工作流**：[每周工作流](./workflow) — 看想法如何进入系统
-3. **GitHub 入门**：[GitHub 零基础入门](./github-beginner-guide) — 看如何注册、接受邀请、提 Issue
-4. **工具清单**：[工具清单](./tools) — 看默认需要什么工具
-5. **常见问题**：[FAQ](./faq) — 看权限、Issue、手机协作等问题
-
-## 默认协作方式
-
-| 你需要什么 | 默认做法 |
-|------|---------|
-| 了解当前进度 | 看目标仓库的 `TODO.md` 和 open Issues |
-| 判断想法是否合理 | 先问 AI / gstack / 外部咨询 |
-| 正式提出需求 | 开 GitHub Issue |
-| 跟进结果 | 在原 Issue 里继续追踪 |
-| 紧急问题 | 微信提醒，但之后补回 Issue |
-
-## 相关资源
-
-- [mysterious](https://github.com/DayouProject/mysterious)
-- [animal-dayou](https://github.com/DayouProject/animal-dayou)
-- [dayou-content](https://github.com/DayouProject/dayou-content)
+<section class="section-block">
+  <div class="section-head">
+    <span class="section-kicker">Quick Links</span>
+    <h2>直接去需要的地方</h2>
+  </div>
+  <div class="reading-grid">
+    <div class="reading-card">
+      <h3><a href="./tools">工具清单</a></h3>
+      <p>默认需要什么，不需要什么，哪些工具只是可选增强。</p>
+    </div>
+    <div class="reading-card">
+      <h3><a href="./day-one">新人第一天</a></h3>
+      <p>给第一次加入的人一条最短上手路径，不靠经验传承。</p>
+    </div>
+    <div class="reading-card">
+      <h3><a href="./next-steps">接下来 2 周</a></h3>
+      <p>看现在团队正在推进什么，避免提一个已经被排进去的需求。</p>
+    </div>
+    <div class="reading-card">
+      <h3><a href="https://github.com/DayouProject/dayou-content/issues/new/choose">新建 Issue</a></h3>
+      <p>已经判断清楚并整理完需求后，直接从这里进入正式留痕。</p>
+    </div>
+  </div>
+</section>
