@@ -5,9 +5,16 @@ nav_order: 6
 
 # AI 接管入口
 
-这页是给“人 + AI”一起看的。
+这页现在是备用页。
 
-如果你已经配好 `Claude / Cursor / Codex` 其中之一，把这页链接贴给它，它就应该能继续带你完成后面的流程。
+普通协作者默认先读首页：
+
+`https://dayouproject.github.io/dayou-content/`
+
+首页已经包含“一页上手 + 可直接复制到 agent 的 bootstrap”。  
+只有当你想单独给 agent 一个专门的说明页时，再用这页。
+
+如果你已经配好 `Claude / Cursor / Codex` 其中之一，把这页链接贴给它，它也可以继续带你完成后面的流程。
 
 在线地址：
 
