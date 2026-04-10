@@ -120,13 +120,13 @@ Dayou 现在不要求每个人都装同一款 AI 工具。
 
 把这页链接贴给 AI：
 
-`https://dayouproject.github.io/dayou-content/ai-handoff/`
+`https://dayouproject.github.io/dayou-content/ai-handoff.html`
 
 然后发这段话：
 
 ```text
 请先阅读这个 Dayou 页面，然后作为我的协作 AI 继续带我走流程：
-https://dayouproject.github.io/dayou-content/ai-handoff/
+https://dayouproject.github.io/dayou-content/ai-handoff.html
 
 先用普通中文总结 Dayou 三个仓库的区别，再问我最多 3 个问题，判断我现在更需要：
 1. repo 路由

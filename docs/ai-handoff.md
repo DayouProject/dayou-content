@@ -11,7 +11,7 @@ nav_order: 6
 
 在线地址：
 
-`https://dayouproject.github.io/dayou-content/ai-handoff/`
+`https://dayouproject.github.io/dayou-content/ai-handoff.html`
 
 ## 给人的最短用法
 
@@ -19,7 +19,7 @@ nav_order: 6
 
 ```text
 请先阅读这个 Dayou 页面，然后作为我的协作 AI 继续带我走流程：
-https://dayouproject.github.io/dayou-content/ai-handoff/
+https://dayouproject.github.io/dayou-content/ai-handoff.html
 
 先用普通中文总结 Dayou 三个仓库的区别，再问我最多 3 个问题，判断我现在更需要：
 1. repo 路由

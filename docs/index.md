@@ -13,9 +13,9 @@ has_toc: false
     这里默认你不写代码，也默认你可以先用 AI 把问题问清楚。
   </p>
   <div class="hero-actions">
-    <a class="portal-button primary" href="./ai-setup">先配置 AI</a>
-    <a class="portal-button secondary" href="./ai-handoff">把链接交给 AI</a>
-    <a class="portal-button secondary" href="./repo-scope">再判断去哪个仓库</a>
+    <a class="portal-button primary" href="./ai-setup.html">先配置 AI</a>
+    <a class="portal-button secondary" href="./ai-handoff.html">把链接交给 AI</a>
+    <a class="portal-button secondary" href="./repo-scope.html">再判断去哪个仓库</a>
   </div>
   <div class="signal-grid">
     <div class="signal-card">
@@ -139,27 +139,27 @@ has_toc: false
   </div>
   <div class="reading-grid">
     <div class="reading-card">
-      <h3><a href="./ai-setup">AI 配置</a></h3>
+      <h3><a href="./ai-setup.html">AI 配置</a></h3>
       <p>先把 AI 入口配好，知道该用哪条路线，知道什么叫配置完成。</p>
     </div>
     <div class="reading-card">
-      <h3><a href="./ai-handoff">AI 接管入口</a></h3>
+      <h3><a href="./ai-handoff.html">AI 接管入口</a></h3>
       <p>把这一页直接贴给 AI，让它继续带你做 repo 路由、office hours、daily 和 Issue 草稿。</p>
     </div>
     <div class="reading-card">
-      <h3><a href="./repo-scope">仓库分工</a></h3>
+      <h3><a href="./repo-scope.html">仓库分工</a></h3>
       <p>先把三个仓库的职责边界看清楚，减少后续来回搬运。</p>
     </div>
     <div class="reading-card">
-      <h3><a href="./workflow">每周工作流</a></h3>
+      <h3><a href="./workflow.html">每周工作流</a></h3>
       <p>看一个想法如何从自然语言进入正式系统，再进入实现和验证。</p>
     </div>
     <div class="reading-card">
-      <h3><a href="./github-beginner-guide">GitHub 零基础入门</a></h3>
+      <h3><a href="./github-beginner-guide.html">GitHub 零基础入门</a></h3>
       <p>只讲注册、接受邀请、提交 Issue 这些真正需要的动作。</p>
     </div>
     <div class="reading-card">
-      <h3><a href="./faq">FAQ</a></h3>
+      <h3><a href="./faq.html">FAQ</a></h3>
       <p>权限、手机协作、Issue 用法、AI 怎么配、office hours 和 daily 的边界，这里一次看清楚。</p>
     </div>
   </div>
@@ -172,27 +172,27 @@ has_toc: false
   </div>
   <div class="reading-grid">
     <div class="reading-card">
-      <h3><a href="./organization-skills">组织级 AI Skills</a></h3>
+      <h3><a href="./organization-skills.html">组织级 AI Skills</a></h3>
       <p>统一不同 AI 客户端的行为，让 `/route`、`/issue`、`/office-hours`、`/daily` 有同一套含义。</p>
     </div>
     <div class="reading-card">
-      <h3><a href="./gstack-office-hours">gstack Office Hours</a></h3>
+      <h3><a href="./gstack-office-hours.html">gstack Office Hours</a></h3>
       <p>给协作者一份可以直接拿去问技术 sanity check 的标准模板，不再临场组织问题。</p>
     </div>
     <div class="reading-card">
-      <h3><a href="./daily">/daily 模板</a></h3>
+      <h3><a href="./daily.html">/daily 模板</a></h3>
       <p>让 AI 按统一格式输出今天最重要的动作、blockers 和需要确认的事。</p>
     </div>
     <div class="reading-card">
-      <h3><a href="./day-one">新人第一天</a></h3>
+      <h3><a href="./day-one.html">新人第一天</a></h3>
       <p>给第一次加入的人一条最短上手路径，不靠经验传承。</p>
     </div>
     <div class="reading-card">
-      <h3><a href="./tools">工具清单</a></h3>
+      <h3><a href="./tools.html">工具清单</a></h3>
       <p>默认需要什么，不需要什么，哪些工具只是可选增强。</p>
     </div>
     <div class="reading-card">
-      <h3><a href="./next-steps">接下来 2 周</a></h3>
+      <h3><a href="./next-steps.html">接下来 2 周</a></h3>
       <p>看现在团队正在推进什么，避免提一个已经被排进去的需求。</p>
     </div>
     <div class="reading-card">

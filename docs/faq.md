@@ -76,7 +76,7 @@ Dayou 真正需要的是：
 
 优先贴这个：
 
-`https://dayouproject.github.io/dayou-content/ai-handoff/`
+`https://dayouproject.github.io/dayou-content/ai-handoff.html`
 
 或者直接打开 [AI 接管入口](./ai-handoff)。
 
