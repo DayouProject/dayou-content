@@ -159,6 +159,8 @@ https://dayouproject.github.io/dayou-content/ai-handoff/
 ## 相关页面
 
 - [AI 接管入口](./ai-handoff)
+- [gstack Office Hours](./gstack-office-hours)
+- [/daily 模板](./daily)
 - [组织级 AI Skills](./organization-skills)
 - [工具清单](./tools)
 - [GitHub 零基础入门](./github-beginner-guide)

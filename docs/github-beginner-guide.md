@@ -1,6 +1,6 @@
 ---
 title: GitHub 入门
-nav_order: 8
+nav_order: 10
 ---
 
 # GitHub 零基础入门指南

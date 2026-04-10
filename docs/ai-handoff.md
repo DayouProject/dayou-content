@@ -180,6 +180,11 @@ https://dayouproject.github.io/dayou-content/ai-handoff/
 - `/daily`：基于当前上下文生成今天的 daily
 - `/context`：把 README / TODO / open Issues 解释成普通中文
 
+如果需要现成模板，可以参考：
+
+- [gstack Office Hours](./gstack-office-hours)
+- [/daily 模板](./daily)
+
 ## 你输出时建议用的格式
 
 ### `/route`
@@ -243,5 +248,7 @@ Done 标准：
 
 - [AI 配置](./ai-setup)
 - [组织级 AI Skills](./organization-skills)
+- [gstack Office Hours](./gstack-office-hours)
+- [/daily 模板](./daily)
 - [仓库分工](./repo-scope)
 - [每周工作流](./workflow)

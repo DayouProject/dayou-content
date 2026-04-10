@@ -220,4 +220,6 @@ nav_order: 7
 
 - [AI 配置](./ai-setup)
 - [AI 接管入口](./ai-handoff)
+- [gstack Office Hours](./gstack-office-hours)
+- [/daily 模板](./daily)
 - [每周工作流](./workflow)

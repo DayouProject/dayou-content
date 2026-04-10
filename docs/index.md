@@ -176,6 +176,14 @@ has_toc: false
       <p>统一不同 AI 客户端的行为，让 `/route`、`/issue`、`/office-hours`、`/daily` 有同一套含义。</p>
     </div>
     <div class="reading-card">
+      <h3><a href="./gstack-office-hours">gstack Office Hours</a></h3>
+      <p>给协作者一份可以直接拿去问技术 sanity check 的标准模板，不再临场组织问题。</p>
+    </div>
+    <div class="reading-card">
+      <h3><a href="./daily">/daily 模板</a></h3>
+      <p>让 AI 按统一格式输出今天最重要的动作、blockers 和需要确认的事。</p>
+    </div>
+    <div class="reading-card">
       <h3><a href="./day-one">新人第一天</a></h3>
       <p>给第一次加入的人一条最短上手路径，不靠经验传承。</p>
     </div>
