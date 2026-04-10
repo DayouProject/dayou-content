@@ -1,6 +1,6 @@
 ---
 title: 接下来 2 周
-nav_order: 6
+nav_order: 5
 ---
 
 # 接下来 2 周

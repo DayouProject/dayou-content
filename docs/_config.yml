@@ -10,6 +10,20 @@ plugins:
 
 color_scheme: dark
 
+mermaid:
+  version: "10.6.1"
+
+callouts:
+  important:
+    title: 重要
+    color: red
+  note:
+    title: 注意
+    color: yellow
+  tip:
+    title: 提示
+    color: blue
+
 search_enabled: true
 heading_anchors: true
 back_to_top: true
