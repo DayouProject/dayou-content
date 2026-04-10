@@ -5,195 +5,117 @@ nav_order: 6
 
 # GitHub 零基础入门指南
 
-> 从注册账号到参与 Dayou 内容协作，一步一步教你。
-> 预计时间：15 分钟。
-
----
+> 从注册账号到正式参与 Dayou 协作。预计时间：15 分钟。
 
 ## 第一步：注册 GitHub 账号
 
-1. 打开 https://github.com/join
-2. 填写：
-   - **Username（用户名）**：英文，比如你的名字拼音 `zhangsan`
-   - **Email（邮箱）**：填你常用的邮箱
-   - **Password（密码）**：至少 8 位，包含数字和字母
-3. 点击 **Create account**（创建账号）
-4. 去邮箱收验证邮件，点击验证链接
-5. 完成！你现在有一个 GitHub 账号了
-
----
+1. 打开 <https://github.com/join>
+2. 注册账号
+3. 完成邮箱验证
+4. 记住你的 GitHub 用户名
 
 ## 第二步：接受仓库邀请
 
-项目负责人会邀请你加入 `dayou-content` 仓库。
+Lexa 会邀请你进入需要的仓库。
 
-1. 你的邮箱会收到一封来自 GitHub 的邀请邮件
-2. 点击邮件中的 **View invitation**（查看邀请）
-3. 点击 **Accept invitation**（接受邀请）
-4. 现在你可以访问 https://github.com/AlyciaBHZ/dayou-content
+你可能只需要其中一个，也可能需要多个：
 
----
+- `mysterious`
+- `animal-dayou`
+- `dayou-content`
 
-## 第三步：熟悉界面
+接受邀请后，你就能看代码、文档和 Issues。
 
-打开 https://github.com/AlyciaBHZ/dayou-content ，你会看到：
+## 第三步：先判断你该去哪一个仓库
 
-```
-dayou-content/
-├── README.md          ← 项目说明（你正在看的）
-├── RUNBOOK.md         ← 你的操作手册（必读！）
-├── corpus/            ← 古典文本素材
-├── workspace/         ← 生成的脚本和视频
-└── ...
-```
+不要一上来就在错误的仓库提需求。
 
-**重要按钮位置：**
-- **Issues**（问题/任务）：在页面顶部的标签栏，点这里提交内容概念和周报
-- **Code**（代码）：查看文件内容
-- **Pull requests**：暂时不需要用
+先看 [仓库分工](./repo-scope)。
 
----
+一句话判断法：
 
-## 第四步：提交内容概念（你的核心工作）
+- 主产品：去 `mysterious`
+- 宠物产品：去 `animal-dayou`
+- 协作流程、文档、内容资产：去 `dayou-content`
 
-这是你每周一要做的事情。
+## 第四步：熟悉 GitHub 页面
 
-### 操作步骤：
+你主要会用这几个地方：
 
-1. 点击页面顶部的 **Issues** 标签
-2. 点击绿色按钮 **New issue**（新建问题）
-3. 选择模板 **Content Idea Submission / 内容灵感提交**
-4. 按模板填写：
+- `Code`：看文件和文档
+- `Issues`：看需求、开需求、跟进需求
+- `Pull requests`：大多数非技术 collaborator 不需要碰
 
-```
-## Source Text / 经典来源
-易经
+## 第五步：先看上下文，再提需求
 
-## Concept 1 / 概念一
-Core idea: 乾卦"潜龙勿用"——时机未到时蛰伏积蓄的智慧
-Modern angle: 当你刚到一个新环境（新工作、新城市），不要急于表现，先观察
-Target emotion: calm（平静）
+在开新 Issue 之前，先看：
 
-## Concept 2 / 概念二
-Core idea: 五行相生——水生木，滋养才能成长
-Modern angle: 人际关系中，支持比竞争更能带来成长
-Target emotion: reflective（反思）
-```
+1. 仓库的 `README`
+2. 仓库的 `TODO`
+3. 当前 open Issues
 
-5. 点击 **Submit new issue**（提交）
-6. 完成！项目负责人会看到你的概念并生成脚本
+这一步的目的是避免重复提需求，也避免提一个已经在做的东西。
 
----
+## 第六步：先问 AI，再开 Issue
 
-## 第五步：审核生成的脚本
+如果你的想法还很模糊，先问 AI。
 
-脚本生成后，你需要检查内容是否准确。
+你至少要先问清楚：
 
-### 怎么找到脚本：
+1. 这个想法到底在解决什么问题
+2. 大概率能不能做
+3. 第一版最小可交付是什么
+4. 什么结果算 done
 
-1. 在仓库首页，点击 `workspace` 文件夹
-2. 点击 `scripts` 文件夹
-3. 找到本周的文件夹（比如 `2026-W16`）
-4. 点击 `scripts` 子文件夹
-5. 你会看到 7 个 `.md` 文件，每个是一天的视频脚本
+然后再把整理后的版本放进 GitHub Issue。
 
-### 怎么看脚本：
+## 第七步：在 Issue 里做什么
 
-点击任意一个 `.md` 文件，GitHub 会自动渲染成易读的格式：
+一个合格的 Issue 至少要有：
 
-```
-## HOOK
-If life feels unclear right now, this ancient line is telling you where to look.
+- 现状
+- 想要的结果
+- 为什么现在值得做
+- 证据、链接、截图、例子
+- AI 给你的整理结论
+- done 标准
 
-## BODY
-1. This line points to what to do when life feels uncertain...
-2. The message is simple: stop trying to control every outcome...
-3. Use the teaching as a mirror for your next decision...
+## 常见操作
 
-## CTA
-Follow Dayou for one grounded piece of Eastern wisdom every day.
-```
+### 怎么编辑我已经提交的 Issue？
 
-### 怎么给反馈：
+打开 Issue，点击右上角 `...`，选择编辑。
 
-1. 回到你提交的那个 Issue（Issues 标签 → 找到你的 Issue）
-2. 在下方评论区写反馈，比如：
-   - "脚本 03 太抽象了，加一个具体的例子"
-   - "脚本 05 的 CTA 改成提到'五行属性'"
-   - "脚本 01 很好，通过"
-3. 点击 **Comment**（评论）
+### 怎么评论？
 
----
+打开 Issue，在最下方评论区直接输入。
 
-## 第六步：提交周报
+### 我能看到别人提的需求吗？
 
-每周日，记录本周的内容表现。
+可以。打开仓库的 `Issues` 页面即可。
 
-1. **Issues** → **New issue** → 选择 **Weekly Report / 周报**
-2. 填写本周数据：
+### 我会不会不小心改坏代码？
 
-```
-## Published This Week / 本周发布
-- Videos published: 7/7
-- Platform: TikTok
+不会。正常浏览仓库文件是只读的。你主要写入的是 Issue 和评论。
 
-## Performance / 数据表现
-| Day | Title | Views | Likes | Comments |
-|-----|-------|-------|-------|----------|
-| Mon | What to do when life feels uncertain | 1,234 | 45 | 12 |
-| Tue | How to stop forcing timing | 890 | 32 | 8 |
-...
-```
+## 手机上能不能用
 
-3. 数据从哪来？打开 TikTok Creator 后台，复制每条视频的数据
-4. 提交 Issue
+可以。
 
----
+- GitHub 网页可以用
+- GitHub App 也可以用
+- 正式提需求时，仍然优先用网页里的 Issue 模板
 
-## 常见问题
+## 你默认不需要学什么
 
-### Q: 我不小心改了什么东西怎么办？
-**A:** 不用担心。你在 GitHub 网页上浏览文件是只读的，不会改到任何东西。只有 Issues（评论区）是你可以写入的地方。
-
-### Q: 我能看到其他人提交的概念吗？
-**A:** 可以。点击 Issues 标签就能看到所有人提交的概念和周报。
-
-### Q: 怎么编辑我已经提交的 Issue？
-**A:** 打开你的 Issue，点击右上角的三个点 `...`，选择 **Edit**（编辑）。
-
-### Q: 我提交了概念但没人回应怎么办？
-**A:** 微信联系项目负责人。GitHub Issue 是异步工具，紧急事情直接微信。
-
-### Q: 我可以用手机操作吗？
-**A:** 可以。GitHub 网页在手机浏览器上可以正常使用。也可以下载 GitHub 手机 App。
-
-### Q: 我需要学 git 命令吗？
-**A:** 不需要。你的所有操作都在 GitHub 网页上完成（提交概念、审核脚本、写周报）。只有项目负责人需要用命令行。
-
----
-
-## 术语表
-
-| 看到的英文 | 意思 |
-|-----------|------|
-| Repository / Repo | 仓库，就是我们的项目文件夹 |
-| Issue | 问题/任务，我们用它来提交概念和周报 |
-| Comment | 评论，在 Issue 下方写反馈 |
-| Code | 代码/文件，点这里查看项目文件 |
-| Commit | 提交，指负责人保存了一次代码修改 |
-| Branch | 分支，暂时不需要了解 |
-| Pull Request (PR) | 合并请求，暂时不需要了解 |
-| Markdown (.md) | 一种文本格式，GitHub 会自动渲染成易读的样子 |
-
----
+- 不需要学 `git` 命令
+- 不需要学本地开发
+- 不需要装 Claude Code
+- 不需要装 Codex CLI
+- 不需要碰 Vercel
 
 ## 下一步
 
-1. 注册完 GitHub 后，把你的用户名发给项目负责人
-2. 等待邀请邮件，接受邀请
-3. 阅读 [每周工作流](./workflow) 与 [角色说明](./roles)，先弄清你的职责边界
-4. 如需看仓库原始操作手册，可打开 [RUNBOOK.md（GitHub）](https://github.com/AlyciaBHZ/dayou-content/blob/main/RUNBOOK.md)
-5. 每周一提交内容概念，每周日提交周报
-6. 有问题随时在 Issue 里提问或微信联系负责人
-
-{% include weekly-flow.md %}
+1. 看 [仓库分工](./repo-scope)
+2. 看 [每周工作流](./workflow)
+3. 如果要提需求，先问 AI，再开 Issue

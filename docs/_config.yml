@@ -1,5 +1,5 @@
-title: 大有团队手册
-description: 大有内容运营与入职协作门户
+title: Dayou 协作门户
+description: Dayou 三个核心仓库的统一协作入口
 lang: zh-CN
 url: "https://alyciabhz.github.io"
 baseurl: "/dayou-content"
@@ -32,8 +32,8 @@ nav_sort: case_insensitive
 
 aux_links:
   GitHub 仓库:
-    - https://github.com/AlyciaBHZ/dayou-content
+    - https://github.com/DayouProject/dayou-content
   新建 Issue:
-    - https://github.com/AlyciaBHZ/dayou-content/issues/new/choose
+    - https://github.com/DayouProject/dayou-content/issues/new/choose
 
-footer_content: "Dayou（大有）内容团队手册：给内容运营、大师顾问与协作伙伴的清晰工作入口。"
+footer_content: "Dayou 协作门户：给三个核心仓库使用者的统一工作入口。"

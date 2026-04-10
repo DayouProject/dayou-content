@@ -45,15 +45,20 @@
 
 ## 团队协作
 
-**不需要技术背景也能参与。** 详细操作指南见 [RUNBOOK.md](RUNBOOK.md)。
+`dayou-content` 现在不只是内容仓库，也是 Dayou 三个核心仓库的协作中台。
 
-完全零基础？从这里开始：[GitHub 新手入门指南](docs/github-beginner-guide.md)
+默认协作方式：
 
-| 角色 | 做什么 | 在哪里做 |
-|------|--------|----------|
-| 创始人 | 跑管线、分配任务、看数据 | 终端 + GitHub |
-| 内容负责人 | 提交脚本概念、审核内容 | GitHub Issues |
-| 大师/顾问 | 提供每周 2-3 个概念 | 微信 → GitHub Issue |
+1. 先判断需求属于哪个仓库
+2. 先问 AI，把问题整理清楚
+3. 再开 GitHub Issue
+4. 由 Lexa 负责技术实现和收口
+
+完全零基础？先看：
+
+- [仓库分工](docs/repo-scope.md)
+- [每周工作流](docs/workflow.md)
+- [GitHub 零基础入门](docs/github-beginner-guide.md)
 
 ## 目录结构
 
@@ -89,7 +94,7 @@ dayou-content/
 
 ```bash
 # 克隆仓库
-git clone https://github.com/AlyciaBHZ/dayou-content.git
+git clone https://github.com/DayouProject/dayou-content.git
 cd dayou-content
 
 # 安装依赖

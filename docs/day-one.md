@@ -5,138 +5,79 @@ nav_order: 2
 
 # 新人第一天
 
-10 分钟内从零到能干活。按顺序做。
+10 分钟内完成从零到能参与协作。
 
-## 你是哪种角色？
+## 第 1 步：注册 GitHub
 
-| 你是 | 直接跳到 |
-|------|----------|
-| 创始人 / 技术（Lexa） | 你已经在这里了，跳过此页 |
-| **知识库负责人** | [↓ 知识库新人流程](#知识库负责人) |
-| **宣发负责人** | [↓ 宣发新人流程](#宣发负责人) |
+- 打开 <https://github.com/join>
+- 注册并验证邮箱
+- 把 GitHub 用户名发给 Lexa
 
----
+## 第 2 步：接受邀请
 
-## 知识库负责人
+- 接受对应仓库邀请
+- 你可能只需要其中一个，也可能需要多个
 
-### 第 1 步（3 分钟）：注册 GitHub
-- 打开 https://github.com/join
-- 用真名拼音作为用户名
-- 邮箱验证完成
-- 把用户名发给 Lexa（微信）
+## 第 3 步：读三页
 
-### 第 2 步（1 分钟）：等待邀请
-- Lexa 把你加进 `dayou-content` 仓库
-- 你的邮箱会收到 GitHub 邀请邮件
-- 点击邮件里的 "Accept invitation"
+按顺序看：
 
-### 第 3 步（5 分钟）：装 Claude Code 并 clone 仓库
-- 装 Claude Code：https://docs.claude.com/claude-code
-- 在终端跑：
-  ```bash
-  git clone https://github.com/AlyciaBHZ/dayou-content.git
-  cd dayou-content
-  claude code .
-  ```
-- 在 Claude Code 里输入 `/daily`，看到自己的当日任务
-- 不知道怎么装 Claude Code？看 [GitHub 零基础入门](./github-beginner-guide)
+1. [仓库分工](./repo-scope)
+2. [每周工作流](./workflow)
+3. [GitHub 零基础入门](./github-beginner-guide)
 
-### 第 4 步（3 分钟）：读两份必读文档
-- [角色说明](./roles)：弄清楚你负责什么、不负责什么
-- [文化翻译规则](https://github.com/AlyciaBHZ/dayou-content/blob/main/CULTURAL_TRANSLATION.md)：海外受众的术语翻译边界
+## 第 4 步：准备一个 AI 入口
 
-### 第 5 步（3 分钟）：提交你的第一个 Content Idea
-- 打开 https://github.com/AlyciaBHZ/dayou-content/issues/new/choose
-- 选 "Content Idea Submission / 内容灵感提交"
-- 按模板填 2-3 个概念（来自易经、道德经、五行等）
-- 提交
+至少准备一个：
 
-### 完成
-你已经完成第一天的工作。Lexa 会在 24 小时内回复"已接收"或"需要补齐"。
+- ChatGPT
+- Claude
+- gstack office hours
+- 其他你熟悉的外部咨询入口
 
-之后每天上班第一件事：
-```bash
-cd dayou-content
-git pull origin main
-claude code .   # 跑 /daily
-```
+默认规则不是“有问题先问人”，而是“先问 AI 把问题整理清楚”。
 
-**重要：你不需要 git push 任何东西。所有工作通过 GitHub Issues 提交。** 详见 [协作规则](https://github.com/AlyciaBHZ/dayou-content/blob/main/CONTRIBUTING.md)。
+## 第 5 步：看一次真实上下文
 
----
+去你要参与的目标仓库，看：
 
-## 宣发负责人
+- `README`
+- `TODO`
+- open Issues
 
-### 第 1 步（3 分钟）：注册 GitHub
-- 打开 https://github.com/join
-- 用真名拼音作为用户名
-- 邮箱验证完成
-- 把用户名发给 Lexa（微信）
+如果你看不懂 `TODO`，直接把内容贴给 AI，让 AI 用普通语言解释。
 
-### 第 2 步（1 分钟）：等待邀请
-- Lexa 把你加进 `dayou-content` 仓库
-- 接受邀请邮件
+## 第 6 步：知道自己默认不需要什么
 
-### 第 3 步（5 分钟）：装 Claude Code 并 clone 仓库
-- 装 Claude Code：https://docs.claude.com/claude-code
-- 在终端跑：
-  ```bash
-  git clone https://github.com/AlyciaBHZ/dayou-content.git
-  cd dayou-content
-  claude code .
-  ```
-- 在 Claude Code 里输入 `/daily`，看到自己的当日任务和发布排期
+默认不需要：
 
-### 第 4 步（3 分钟）：读两份必读文档
-- [角色说明](./roles)：弄清楚你负责什么
-- [每周工作流](./workflow)：看你周四到周日的工作节奏
+- clone 仓库
+- `git`
+- VS Code
+- Claude Code
+- Codex CLI
+- Node.js
+- Vercel
 
-### 第 5 步（3 分钟）：准备社媒账号
-- 打开 [工具清单](./tools)，看 TikTok / Instagram 账号注册要求
-- 不要立刻注册账号，先和 Lexa 对齐账号信息（账号名、头像、简介）
-- 账号注册完成后，把账号链接发到 Lexa 那里登记
+## 第 7 步：你第一天就能做的三件事
 
-### 完成
-你已经完成第一天的准备。本周内会进入第一次发布测试。
+- 看懂当前项目在推进什么
+- 知道你的事情应该进哪个仓库
+- 把一个模糊想法先整理成可提交的 Issue
 
-之后每天上班第一件事：
-```bash
-cd dayou-content
-git pull origin main
-claude code .   # 跑 /daily
-```
+## 完成标准
 
-**重要：你不需要 git push 任何东西。** 详见 [协作规则](https://github.com/AlyciaBHZ/dayou-content/blob/main/CONTRIBUTING.md)。
+如果你已经能做到下面三件事，就算第一天完成：
 
----
-
-## 共同的"必须知道"清单
-
-| 你必须知道 | 在哪里查 |
-|-----------|----------|
-| 我负责什么、不负责什么 | [角色说明](./roles) |
-| 我每周要交什么 | [每周工作流](./workflow) |
-| 我前两周的具体任务 | [接下来 2 周](./next-steps) |
-| 紧急联系谁 | 微信 Lexa |
-| 出问题去哪记录 | GitHub Issue（紧急的先发微信，30 分钟内补 Issue） |
+1. 你能登录 GitHub
+2. 你知道哪个仓库该提哪个问题
+3. 你知道先问 AI，再开 Issue
 
 ## 出现这些情况怎么办
 
 | 情况 | 立刻做什么 |
 |------|------------|
-| 我不会用 GitHub | 看 [GitHub 零基础入门](./github-beginner-guide) |
-| 我登不上账号 | 微信 Lexa，附上报错截图 |
-| 我看不懂文档 | 微信 Lexa，告诉他哪一段不懂 |
-| 我有更好的内容想法 | 直接提 GitHub Issue，不用等许可 |
-| 我发现流程有问题 | 在 [FAQ](./faq) 找一下，找不到就 Issue 提出来 |
-
-## 下一步
-
-完成第一天后，按顺序读：
-
-1. [角色说明](./roles)
-2. [每周工作流](./workflow)
-3. [接下来 2 周](./next-steps)
-4. [FAQ](./faq)
-
-整个阅读 30 分钟以内。
+| 我登不上 GitHub | 把截图发给 Lexa |
+| 我不知道该去哪一个仓库 | 先看 [仓库分工](./repo-scope)，再问 AI |
+| 我不知道这个需求值不值得提 | 先让 AI 帮你整理 |
+| 我看不到 Issue 模板 | 截图发给 Lexa |
