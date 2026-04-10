@@ -46,6 +46,18 @@ nav_order: 3
 | 交接给谁 | 把数据和用户反馈交回 Lexa 与知识库负责人。交接时要在 Weekly Report Issue 写清平台链接、播放、互动、异常、下周建议。 |
 | 做得好是什么样 | 视频按计划发出；链接和数据可追踪；被限流、被举报、评论争议等问题当天可见；周报能直接反推下周题材。 |
 
+## Git 协作规则
+
+**只有 Lexa 能 push 到 main 分支。** 知识库负责人和宣发负责人都不需要 clone 仓库或装 git。
+
+| 谁 | 能做什么 | 不能做什么 |
+|----|---------|----------|
+| 知识库负责人 | 在 GitHub 网页提 Issue、评论、写周报 | 不要 clone repo、不要 push 任何分支 |
+| 宣发负责人 | 在 GitHub 网页看脚本、提 Issue、提周报 | 不要 clone repo、不要改配置文件 |
+| Lexa | 全部 | — |
+
+详见 [协作规则](https://github.com/AlyciaBHZ/dayou-content/blob/main/CONTRIBUTING.md)。
+
 ## 边界速查
 
 ```text
