@@ -17,7 +17,7 @@ Dayou 现在是一个多仓库系统，不是单一项目。
 - `animal-dayou`：宠物产品
 - `dayou-content`：协作中台、内容资产和团队手册
 
-如果你不确定自己该看哪个仓库，先看 [仓库分工](./repo-scope)。
+如果你不确定自己该看哪个仓库，先看 [仓库分工](./repo-scope.html)。
 
 ### 我需要懂代码吗？
 
@@ -36,41 +36,50 @@ Dayou 现在是一个多仓库系统，不是单一项目。
 
 ### 我应该先配 GitHub，还是先配 AI？
 
-两者都要，但 Dayou 现在默认是 `GitHub + 一个 AI 入口` 一起工作。
+两者都要，但 Dayou 现在默认是 `GitHub + Claude / Cursor / Codex 之一` 一起工作。
 
-如果你还没配 AI，先看 [AI 配置](./ai-setup)。
+如果你还没配 AI，先看 [AI 配置](./ai-setup.html)。
 
 ### 我应该先看哪一页？
 
 按这个顺序：
 
-1. [AI 配置](./ai-setup)
-2. [AI 接管入口](./ai-handoff)
-3. [仓库分工](./repo-scope)
-4. [每周工作流](./workflow)
-5. [GitHub 零基础入门](./github-beginner-guide)
+1. [AI 配置](./ai-setup.html)
+2. [AI 接管入口](./ai-handoff.html)
+3. [仓库分工](./repo-scope.html)
+4. [每周工作流](./workflow.html)
+5. [GitHub 零基础入门](./github-beginner-guide.html)
 
 ## AI 相关
 
 ### 我到底该用哪个 AI？
 
-默认推荐顺序：
+Dayou 当前的最低标准不是“任意 AI 都行”。
 
-1. ChatGPT 或 Claude 网页版
-2. Cursor
-3. Codex / Claude Code
+每个人至少要配置下面三者之一：
 
-如果你只是想先参与协作，不要把“会不会本地 AI 工具”当成前置门槛。
+- Claude
+- Cursor
+- Codex
 
-### 我必须会 Cursor、Codex 或 Claude Code 吗？
+其中：
 
-默认不需要。
+- 大多数 collaborator 的默认起点是 `Claude`
+- 已经习惯编辑器的人用 `Cursor`
+- 更贴近 repo 和实现层的人用 `Codex`
+
+ChatGPT 可以作为补充，但不再作为 Dayou 的团队最低标准。
+
+### 我至少要配好什么？
+
+你至少要有 `Claude / Cursor / Codex` 其中之一。
 
 Dayou 真正需要的是：
 
-- 你有一个 AI 入口
+- 你已经达到这个最低客户端标准
 - 这个 AI 能读 Dayou 的页面
 - 这个 AI 能帮你走后面的流程
+- 这个 AI 能先帮你准备 office hours brief
 
 ### 我把哪个链接贴给 AI？
 
@@ -78,17 +87,17 @@ Dayou 真正需要的是：
 
 `https://dayouproject.github.io/dayou-content/ai-handoff.html`
 
-或者直接打开 [AI 接管入口](./ai-handoff)。
+或者直接打开 [AI 接管入口](./ai-handoff.html)。
 
 ### AI 读不了链接怎么办？
 
-直接打开 [AI 接管入口](./ai-handoff)，把整页内容复制进去。
+直接打开 [AI 接管入口](./ai-handoff.html)，把整页内容复制进去。
 
 ### gstack office hours 是日常入口吗？
 
 不是。
 
-它更像专项技术咨询入口。
+它更像专项技术咨询入口，不是替代 `Claude / Cursor / Codex` 的日常入口。
 
 默认顺序是：
 
@@ -161,7 +170,7 @@ Dayou 真正需要的是：
 
 ### 我什么时候该用 office hours？
 
-当需求合理，但技术路径不清楚时。
+当你已经先用 `Claude / Cursor / Codex` 之一把需求整理过，但技术路径仍然不清楚时。
 
 比如：
 
@@ -210,5 +219,5 @@ Dayou 真正需要的是：
 
 - 紧急问题：微信
 - 正式需求：GitHub Issue
-- 不确定归属：先看 [仓库分工](./repo-scope)，再问 AI
-- 不知道 AI 怎么配：看 [AI 配置](./ai-setup)
+- 不确定归属：先看 [仓库分工](./repo-scope.html)，再问 AI
+- 不知道 AI 怎么配：看 [AI 配置](./ai-setup.html)

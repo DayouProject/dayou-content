@@ -7,15 +7,15 @@ nav_order: 10
 
 > 从注册账号到正式参与 Dayou 协作。预计时间：15 分钟。
 
-## 第零步：先准备一个 AI 入口
+## 第零步：先准备一个 AI 客户端
 
 在 Dayou 里，GitHub 和 AI 是配套使用的。
 
-如果你还没准备好 AI，先看 [AI 配置](./ai-setup)。
+如果你还没准备好 AI，先看 [AI 配置](./ai-setup.html)。
 
 目标不是先学复杂工具，而是先确保：
 
-- 你有一个能工作的 AI 入口
+- 你已经配好 `Claude / Cursor / Codex` 之一
 - 它能读 Dayou 页面
 - 它能帮你整理问题，再进入 GitHub
 
@@ -42,7 +42,7 @@ Lexa 会邀请你进入需要的仓库。
 
 不要一上来就在错误的仓库提需求。
 
-先看 [仓库分工](./repo-scope)。
+先看 [仓库分工](./repo-scope.html)。
 
 一句话判断法：
 
@@ -74,7 +74,7 @@ Lexa 会邀请你进入需要的仓库。
 
 如果你想让 AI 直接进入 Dayou 模式，可以先把这页贴给它：
 
-- [AI 接管入口](./ai-handoff)
+- [AI 接管入口](./ai-handoff.html)
 
 你至少要先问清楚：
 
@@ -132,8 +132,8 @@ Lexa 会邀请你进入需要的仓库。
 
 ## 下一步
 
-1. 看 [AI 配置](./ai-setup)
-2. 看 [AI 接管入口](./ai-handoff)
-3. 看 [仓库分工](./repo-scope)
-4. 看 [每周工作流](./workflow)
+1. 看 [AI 配置](./ai-setup.html)
+2. 看 [AI 接管入口](./ai-handoff.html)
+3. 看 [仓库分工](./repo-scope.html)
+4. 看 [每周工作流](./workflow.html)
 5. 如果要提需求，先问 AI，再开 Issue

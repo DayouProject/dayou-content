@@ -13,24 +13,21 @@ nav_order: 2
 - 注册并验证邮箱
 - 把 GitHub 用户名发给 Lexa
 
-## 第 2 步：配置一个 AI 入口
+## 第 2 步：先达到 Dayou 的最低 AI 标准
 
-你不需要一上来就学复杂工具。
+你不需要一上来就学复杂工具，但你需要至少配置下面三者之一：
 
-你只需要先准备好一个可用的 AI 入口：
-
-- ChatGPT
 - Claude
 - Cursor
-- Codex / Claude Code
+- Codex
 
-如果你还不知道该选哪个，直接看 [AI 配置](./ai-setup)。
+如果你还不知道该选哪个，直接看 [AI 配置](./ai-setup.html)。
 
 ## 第 3 步：把 Dayou 的 AI 接管页贴给 AI
 
 把这一页贴给你的 AI：
 
-- [AI 接管入口](./ai-handoff)
+- [AI 接管入口](./ai-handoff.html)
 
 然后让它先做三件事：
 
@@ -49,11 +46,11 @@ nav_order: 2
 
 按顺序看：
 
-1. [AI 配置](./ai-setup)
-2. [AI 接管入口](./ai-handoff)
-3. [仓库分工](./repo-scope)
-4. [每周工作流](./workflow)
-5. [GitHub 零基础入门](./github-beginner-guide)
+1. [AI 配置](./ai-setup.html)
+2. [AI 接管入口](./ai-handoff.html)
+3. [仓库分工](./repo-scope.html)
+4. [每周工作流](./workflow.html)
+5. [GitHub 零基础入门](./github-beginner-guide.html)
 
 ## 第 6 步：看一次真实上下文
 
@@ -71,7 +68,7 @@ nav_order: 2
 
 默认顺序是：
 
-1. 先让 AI 帮你整理问题
+1. 先用 `Claude / Cursor / Codex` 之一让 AI 帮你整理问题
 2. 如果技术方向不确定，再准备 office hours brief
 3. 如果只是想知道今天该推进什么，就让 AI 走 `/daily`
 
@@ -82,8 +79,7 @@ nav_order: 2
 - clone 仓库
 - `git`
 - VS Code
-- 立刻学会 Claude Code
-- 立刻学会 Codex CLI
+- 立刻装一整套本地开发工具
 - Node.js
 - Vercel
 
@@ -95,20 +91,21 @@ nav_order: 2
 
 ## 完成标准
 
-如果你已经能做到下面三件事，就算第一天完成：
+如果你已经能做到下面五件事，就算第一天完成：
 
 1. 你能登录 GitHub
-2. 你能把 [AI 接管入口](./ai-handoff) 贴给 AI 并继续对话
-3. 你知道哪个仓库该提哪个问题
-4. 你知道先问 AI，再开 Issue
+2. 你已经配好 `Claude / Cursor / Codex` 之一
+3. 你能把 [AI 接管入口](./ai-handoff.html) 贴给 AI 并继续对话
+4. 你知道哪个仓库该提哪个问题
+5. 你知道先问 AI，再开 Issue
 
 ## 出现这些情况怎么办
 
 | 情况 | 立刻做什么 |
 |------|------------|
 | 我登不上 GitHub | 把截图发给 Lexa |
-| 我不知道该用哪个 AI | 先看 [AI 配置](./ai-setup) |
-| AI 读不了链接 | 打开 [AI 接管入口](./ai-handoff)，把页面内容整段复制给 AI |
-| 我不知道该去哪一个仓库 | 先看 [仓库分工](./repo-scope)，再问 AI |
+| 我不知道该用哪个 AI | 先看 [AI 配置](./ai-setup.html) |
+| AI 读不了链接 | 打开 [AI 接管入口](./ai-handoff.html)，把页面内容整段复制给 AI |
+| 我不知道该去哪一个仓库 | 先看 [仓库分工](./repo-scope.html)，再问 AI |
 | 我不知道这个需求值不值得提 | 先让 AI 帮你整理 |
 | 我看不到 Issue 模板 | 截图发给 Lexa |

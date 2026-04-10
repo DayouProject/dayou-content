@@ -9,19 +9,19 @@ has_toc: false
   <p class="portal-kicker">Human Language First</p>
   <h1 class="hero-title">Dayou 协作门户</h1>
   <p class="hero-lead">
-    三个核心仓库的统一入口。先配置好一个 AI 入口，再把 Dayou 的 AI 接管页贴给它，让它继续带你判断仓库、整理问题、准备 office hours、生成 daily 和 Issue 草稿。
+    三个核心仓库的统一入口。先至少配置好 Claude、Cursor 或 Codex 之一，再把 Dayou 的 AI 接管页贴给它，让它继续带你判断仓库、整理问题、准备 office hours、生成 daily 和 Issue 草稿。
     这里默认你不写代码，也默认你可以先用 AI 把问题问清楚。
   </p>
   <div class="hero-actions">
-    <a class="portal-button primary" href="./ai-setup.html">先配置 AI</a>
+    <a class="portal-button primary" href="./ai-setup.html">先配置 Claude / Cursor / Codex</a>
     <a class="portal-button secondary" href="./ai-handoff.html">把链接交给 AI</a>
     <a class="portal-button secondary" href="./repo-scope.html">再判断去哪个仓库</a>
   </div>
   <div class="signal-grid">
     <div class="signal-card">
-      <span class="signal-label">默认起点</span>
-      <strong>浏览器 + GitHub + 一个 AI</strong>
-      <p>不需要 clone 仓库，不需要本地开发环境，不需要先学代码。</p>
+      <span class="signal-label">最低门槛</span>
+      <strong>浏览器 + GitHub + Claude / Cursor / Codex</strong>
+      <p>每个人至少要配好三者之一，然后再进入 office hours、/daily 和 Issue 流程。</p>
     </div>
     <div class="signal-card">
       <span class="signal-label">AI 接管</span>
@@ -75,7 +75,7 @@ has_toc: false
   <div class="triage-grid">
     <div class="triage-card">
       <h3>我还没配 AI</h3>
-      <p>先选一个能工作的 AI 入口，再把 Dayou 的 AI 接管页贴给它，不要一上来学复杂本地工具。</p>
+      <p>先把 Claude、Cursor 或 Codex 之一配好，再把 Dayou 的 AI 接管页贴给它。</p>
     </div>
     <div class="triage-card">
       <h3>我有一个新想法</h3>
@@ -140,7 +140,7 @@ has_toc: false
   <div class="reading-grid">
     <div class="reading-card">
       <h3><a href="./ai-setup.html">AI 配置</a></h3>
-      <p>先把 AI 入口配好，知道该用哪条路线，知道什么叫配置完成。</p>
+      <p>先把 Claude、Cursor 或 Codex 之一配好，知道什么叫配置完成。</p>
     </div>
     <div class="reading-card">
       <h3><a href="./ai-handoff.html">AI 接管入口</a></h3>

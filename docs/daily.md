@@ -177,6 +177,6 @@ Blockers：
 
 ## 相关页面
 
-- [AI 接管入口](./ai-handoff)
-- [组织级 AI Skills](./organization-skills)
-- [gstack Office Hours](./gstack-office-hours)
+- [AI 接管入口](./ai-handoff.html)
+- [组织级 AI Skills](./organization-skills.html)
+- [gstack Office Hours](./gstack-office-hours.html)

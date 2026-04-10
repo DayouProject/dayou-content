@@ -7,13 +7,11 @@ nav_order: 7
 
 这页定义的是 Dayou 希望所有 AI 客户端都共享的一套行为。
 
-不管协作者最后用的是：
+Dayou 当前的最低标准是：每个 collaborator 至少配置下面三者之一：
 
-- ChatGPT
 - Claude
 - Cursor
 - Codex
-- Claude Code
 
 我们都希望它们至少会做同一批事，而不是每个工具都重新发明一套流程。
 
@@ -218,8 +216,8 @@ nav_order: 7
 
 ## 相关页面
 
-- [AI 配置](./ai-setup)
-- [AI 接管入口](./ai-handoff)
-- [gstack Office Hours](./gstack-office-hours)
-- [/daily 模板](./daily)
-- [每周工作流](./workflow)
+- [AI 配置](./ai-setup.html)
+- [AI 接管入口](./ai-handoff.html)
+- [gstack Office Hours](./gstack-office-hours.html)
+- [/daily 模板](./daily.html)
+- [每周工作流](./workflow.html)
