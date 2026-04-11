@@ -34,6 +34,12 @@ nav_order: 3
 3. 再去问 gstack
 4. 问完以后，把结论带回 GitHub Issue
 
+如果你已经 clone 了任意一个 Dayou 仓库：
+
+- Claude Code：直接输入 `/office-hours`
+- Cursor：直接输入 `/office-hours`
+- Codex：直接说“帮我准备一个 /office-hours brief”
+
 ## 你要带去 office hours 的，不是情绪，是这 6 件事
 
 | 项目 | 你至少要说清楚什么 |

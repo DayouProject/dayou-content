@@ -31,9 +31,9 @@ gh repo clone DayouProject/dayou-content
 
 在任意一个 Dayou 仓库里：
 
-- Claude Code：直接输入 `/daily`
-- Cursor：直接输入 `/daily`
-- Codex：直接说 `给我一个今天的 /daily`
+- Claude Code：直接输入 `/route`、`/context`、`/issue`、`/office-hours`、`/daily`、`/next`
+- Cursor：直接输入 `/route`、`/context`、`/issue`、`/office-hours`、`/daily`、`/next`
+- Codex：直接用自然语言触发同一套命令语义，比如 `给我一个今天的 /daily`
 
 repo 内的 agent 应该先做四件事：
 

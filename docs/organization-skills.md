@@ -16,6 +16,18 @@ Dayou 当前的最低标准是：每个 collaborator 至少配置下面三者之
 
 我们都希望它们至少会做同一批事，而不是每个工具都重新发明一套流程。
 
+现在这套 skills 已经不是纯文档约定：
+
+- Claude Code：仓库内可直接输入这些命令
+- Cursor：仓库内可直接输入这些命令
+- Codex：通过仓库内 `AGENTS.md` 走同一套命令语义
+
+前提仍然是：
+
+1. 先完成 `gh auth`
+2. 先 clone 三个 Dayou 仓库
+3. 先让 agent 读 `README / TODO / open Issues`
+
 ## 什么叫“组织级 skill”
 
 在 Dayou 里，它不是指某个软件专属功能，而是指一套稳定行为：
@@ -182,16 +194,18 @@ Dayou 当前的最低标准是：每个 collaborator 至少配置下面三者之
 6. 默认不要假定固定岗位
 7. 默认不要让聊天替代留痕
 
-## 四个统一触发词
+## 统一触发词
 
-为了让不同 AI 客户端行为尽量一致，Dayou 可以统一用下面四个触发词：
+为了让不同 AI 客户端行为尽量一致，Dayou 可以统一用下面这些触发词：
 
 | 触发词 | AI 应该做什么 |
 |---|---|
 | `/route` | 判断仓库归属 |
+| `/context` | 用普通中文解释仓库上下文 |
 | `/issue` | 产出 GitHub Issue 草稿 |
 | `/office-hours` | 整理 gstack office hours brief |
 | `/daily` | 生成今日 daily |
+| `/next` | 给出最小可执行下一步 |
 
 ## 推荐的统一开场白
 

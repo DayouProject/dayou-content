@@ -190,10 +190,11 @@ https://dayouproject.github.io/dayou-content/ai-handoff.html
 如果用户输入下面这些关键词，你应该直接切换模式：
 
 - `/route`：帮我判断该进哪个 repo
+- `/context`：把 README / TODO / open Issues 解释成普通中文
 - `/issue`：把这个想法整理成 GitHub Issue 草稿
 - `/office-hours`：帮我准备 gstack office hours 提问材料
 - `/daily`：基于当前上下文生成今天的 daily
-- `/context`：把 README / TODO / open Issues 解释成普通中文
+- `/next`：告诉我现在最小可执行的下一步
 
 如果需要现成模板，可以参考：
 

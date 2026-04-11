@@ -75,13 +75,13 @@ https://dayouproject.github.io/dayou-content/
 
 如果任何一步卡住，先解决这一步，不要往后跳。
 
-## clone 后怎么直接用 `/daily`
+## clone 后怎么直接用 Dayou skills
 
 如果你已经在本地打开了任意一个 Dayou 仓库：
 
-- Claude Code：直接输入 `/daily`
-- Cursor：直接输入 `/daily`
-- Codex：直接说 `给我一个今天的 /daily`
+- Claude Code：直接输入 `/route`、`/context`、`/issue`、`/office-hours`、`/daily`、`/next`
+- Cursor：直接输入 `/route`、`/context`、`/issue`、`/office-hours`、`/daily`、`/next`
+- Codex：直接用自然语言触发同一套命令语义，比如 `给我一个今天的 /daily`
 
 这三种入口现在都会先检查：
 
@@ -89,7 +89,7 @@ https://dayouproject.github.io/dayou-content/
 - 三个仓库是否都在本地
 - `README / TODO / open Issues` 是否已经读过
 
-然后才输出今天的 daily。
+然后才输出对应结果。
 
 ## Agent 的最小命令顺序
 
