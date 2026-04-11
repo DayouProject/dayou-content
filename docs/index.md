@@ -72,6 +72,7 @@ https://dayouproject.github.io/dayou-content/
 5. 先读取三个仓库的 `README`、`TODO`、open Issues。
 6. 先用普通中文告诉我 Dayou 现在在做什么、三个仓库分别负责什么。
 7. 只有在前面都完成以后，才继续做 `/route`、`/context`、`/office-hours`、`/daily`、`/issue`。
+8. 如果目标是 `/office-hours`，先确认当前 host 上有没有官方 `garrytan/gstack`；没有就先装，再继续。
 
 如果任何一步卡住，先解决这一步，不要往后跳。
 
@@ -83,11 +84,19 @@ https://dayouproject.github.io/dayou-content/
 - Cursor：直接输入 `/route`、`/context`、`/issue`、`/office-hours`、`/daily`、`/next`
 - Codex：直接用自然语言触发同一套命令语义，比如 `给我一个今天的 /daily`
 
+`gstack` 在 Dayou 里不是一个模糊说法，而是官方 repo `garrytan/gstack`：
+
+- 官方地址：<https://github.com/garrytan/gstack>
+- Dayou 仓库内的 `/office-hours` 是组织级包装层
+- 如果你要跑官方 gstack workflow，agent 应该先检查当前 host 有没有装官方 gstack
+- 没装就先安装，再继续 `/office-hours`
+
 这三种入口现在都会先检查：
 
 - `gh auth` 是否完成
 - 三个仓库是否都在本地
 - `README / TODO / open Issues` 是否已经读过
+- 如果目标是 `/office-hours`，当前 host 是否已经装好官方 gstack
 
 然后才输出对应结果。
 

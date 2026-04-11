@@ -35,6 +35,8 @@ https://dayouproject.github.io/dayou-content/ai-handoff.html
 3. /daily
 4. GitHub Issue 草稿
 
+如果判断结果是第 2 项，先检查当前 host 上是否已经安装官方 `garrytan/gstack`；没有就先安装，再继续 `/office-hours`。
+
 默认把我当成已经至少配好 Claude、Cursor 或 Codex 之一、但不会写代码的 collaborator。
 如果我要跑 repo-native `/daily`，先带我完成 `gh auth` 和 Dayou 三个仓库的 clone。
 不要一上来让我装 Node.js、Vercel 之类的开发工具。
@@ -65,6 +67,7 @@ https://dayouproject.github.io/dayou-content/ai-handoff.html
 5. 所有正式需求、正式决定、验收结论，最后都要回到 GitHub Issue
 6. 不要把 gstack office hours 当成替代 AI 客户端
 7. 如果用户还没配好 `Claude / Cursor / Codex` 之一，先把他带去 AI 配置页
+8. 如果用户要跑 gstack workflow，先检查官方 `garrytan/gstack` 是否已经装在当前 host 上；没装就先安装，不要把“没装”误判成“不知道 gstack 是什么”
 
 ## Dayou 的稳定上下文
 

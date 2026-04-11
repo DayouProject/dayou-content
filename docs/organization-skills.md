@@ -115,6 +115,7 @@ Dayou 当前的最低标准是：每个 collaborator 至少配置下面三者之
 ### 目的
 
 把一个“值得问技术专家的问题”整理成高质量的 gstack office hours brief。
+这里的 `gstack` 默认指官方 repo `garrytan/gstack`；如果当前 host 没装官方 gstack，至少先产出等价 brief，并明确下一步是安装而不是继续含糊讨论。
 
 ### 输入
 
@@ -193,6 +194,7 @@ Dayou 当前的最低标准是：每个 collaborator 至少配置下面三者之
 5. 默认正式结论回到 GitHub Issue
 6. 默认不要假定固定岗位
 7. 默认不要让聊天替代留痕
+8. 默认把 `gstack` 解释成官方 `garrytan/gstack`，而不是一个模糊名词
 
 ## 统一触发词
 

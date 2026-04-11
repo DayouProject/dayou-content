@@ -5,6 +5,13 @@ nav_order: 3
 
 # gstack Office Hours
 
+这里的 `gstack` 指官方 repo `garrytan/gstack`：
+
+- 官方地址：<https://github.com/garrytan/gstack>
+- Dayou 的 `/office-hours` 负责把问题整理成高质量 brief
+- 如果当前 host 已经装了官方 gstack，就继续跑官方 `/office-hours`
+- 如果还没装，agent 先检测并安装，再继续
+
 这页是 Dayou 的 `gstack office hours` 专用提问模板页。
 
 目标不是“想到什么就去问什么”，而是先把问题压成一个高质量 brief，再去问。
@@ -183,6 +190,16 @@ GitHub 仓库 + GitHub Pages 文档站 + GitHub Issues 作为正式留痕。
    - 推荐路径
    - 第一版不做什么
    - 下一步谁来推进
+
+## 官方 gstack 检查清单
+
+这里的 `gstack` 指官方 repo `garrytan/gstack`，不是泛泛的“技术咨询”名词。
+
+- 官方地址：<https://github.com/garrytan/gstack>
+- Claude Code 常见安装位置：`~/.claude/skills/gstack`
+- Cursor 常见安装位置：`~/.cursor/skills/gstack-*`
+- Codex 常见安装位置：`~/.codex/skills/gstack-*`
+- 如果当前 host 还没装官方 gstack，agent 先补装，再继续 `/office-hours`
 
 ## 相关页面
 
