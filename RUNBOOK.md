@@ -1,163 +1,54 @@
-# Dayou Content Pipeline — RUNBOOK
+# Dayou Collaboration Runbook
 
-> For non-technical team members: masters, content reviewers, and marketing operators.
+这是 Dayou 当前统一的协作运行手册，不再按“内容团队固定岗位”来写。
 
-## Your Role
+## 先做什么
 
-You don't need to write code. Your job is:
-1. **Submit content ideas** (weekly, via GitHub Issue)
-2. **Review generated scripts** (approve or request changes)
-3. **Track performance** (weekly, via GitHub Issue)
+1. 配好 `Claude / Cursor / Codex` 之一
+2. 打开 `https://dayouproject.github.io/dayou-content/`
+3. 把首页链接交给你的 agent
+4. 让它先带你完成 `gh auth`
+5. 让它再带你 clone 三个仓库：
+   - `DayouProject/mysterious`
+   - `DayouProject/animal-dayou`
+   - `DayouProject/dayou-content`
 
----
+## clone 后怎么直接用 `/daily`
 
-## Getting Started (One-Time Setup)
+在任意一个 Dayou 仓库里：
 
-### 1. Create a GitHub Account
-- Go to https://github.com/join
-- Sign up with your email
-- Ask the project owner to add you as a collaborator on `AlyciaBHZ/dayou-content`
+- Claude Code：输入 `/daily`
+- Cursor：输入 `/daily`
+- Codex：说 `给我一个今天的 /daily`
 
-### 2. Clone the Repository (Optional)
-If you want to see files locally:
-```bash
-git clone https://github.com/AlyciaBHZ/dayou-content.git
-cd dayou-content
-```
+agent 必须先：
 
-But you can also just use the GitHub website to browse files and create issues.
+1. 检查 `gh auth`
+2. 确认三个仓库都在本地
+3. 读取 `README`、`TODO`（存在时）、open Issues
+4. 再输出一屏内中文 daily
 
----
+## 正式协作怎么留痕
 
-## Weekly Workflow
+聊天只负责整理，正式留痕一律回 GitHub：
 
-### Monday: Submit Content Ideas
+- 需求
+- 决策
+- office hours 结论
+- 实现进度
+- 验收结果
 
-1. Go to https://github.com/AlyciaBHZ/dayou-content/issues/new/choose
-2. Select "Content Idea Submission"
-3. Fill in 2-3 concepts for the week. Examples:
-   - "Explain 'Water overcomes Fire' in the context of workplace conflict"
-   - "Yi Jing hexagram 2 (Kun): the power of receptivity"
-   - "Five Elements in daily decision making"
-4. Submit the issue
+## 什么不用做
 
-### Tuesday-Wednesday: Review Generated Scripts
+- 不用自己研究 Node.js / Vercel
+- 不用自己想完整 git 工作流
+- 非技术协作者不用直接改代码
 
-1. The pipeline generates 7 scripts based on your ideas + the corpus
-2. You'll find them in `workspace/scripts/YYYY-WXX/scripts/`
-3. On GitHub, navigate to that folder and read each `.md` file
-4. Comment on the GitHub Issue if anything needs changes:
-   - "Script 03 feels too abstract, add a concrete example"
-   - "The CTA should mention 'birth element' not 'destiny'"
-   - "This one is great, approve"
+## 紧急情况
 
-### Thursday: Scripts Finalized & Videos Generated
+下面这些情况直接找 Lexa：
 
-After your approval, the pipeline generates HeyGen avatar videos.
-
-### Friday-Sunday: Content Published
-
-Videos are published to TikTok daily via the automated pipeline.
-
----
-
-## How to Submit a Content Idea (Step by Step)
-
-### On GitHub (Recommended)
-
-1. Open https://github.com/AlyciaBHZ/dayou-content/issues
-2. Click "New Issue"
-3. Choose "Content Idea Submission"
-4. Fill in the template:
-   - **Source text**: Which classic? (Yi Jing, Dao De Jing, etc.)
-   - **Concept**: What's the core idea? (1-2 sentences)
-   - **Angle**: How does this apply to modern life?
-   - **Target emotion**: What should the viewer feel?
-5. Submit
-
-### Via WeChat (Fallback)
-
-Send the project owner a voice memo or text with:
-- Which classic text
-- The concept in 1-2 sentences
-- How it applies to modern life
-
-The owner will create the GitHub Issue on your behalf.
-
----
-
-## How to Review Scripts
-
-Each script follows this format:
-
-```
-## HOOK (0-3 seconds)
-One provocative sentence to grab attention
-
-## BODY (3-45 seconds)
-The main teaching, 2-3 key points
-
-## CTA (45-60 seconds)
-Soft invitation to follow or try a reading
-
-## CAPTION
-Text that appears below the video on TikTok
-
-## VISUAL_DIRECTION
-Notes for video production
-```
-
-### What to check:
-- Is the HOOK attention-grabbing? Would you stop scrolling?
-- Is the BODY accurate to the original teaching?
-- Does the cultural translation feel natural in English?
-- Is anything misleading or could be misunderstood by Western audiences?
-
-### How to give feedback:
-Comment directly on the GitHub Issue with specific notes:
-- "Script 02: The body is too long, cut point #3"
-- "Script 05: Great hook, but the Five Elements explanation needs the water/fire analogy"
-
----
-
-## Cultural Translation Reference
-
-When reviewing scripts, ensure these rules are followed:
-
-| Original Chinese | English Translation | Why |
-|-------------------|--------------------|----|
-| 紫微斗数 | "Chinese star destiny chart" | Nobody knows the Chinese term |
-| 八字 | "birth element blueprint" / "Four Pillars" | Recognized in English spiritual circles |
-| 算命 | "personality mapping" / "destiny analysis" | Avoids "fortune telling" stigma |
-| 风水 | "spatial energy" / "environmental harmony" | Known but loaded with cliches |
-| 玄学 | "Chinese metaphysics" / "Eastern wisdom" | Professional, neutral framing |
-
-Full reference: see `CULTURAL_TRANSLATION.md` in this repo.
-
----
-
-## Weekly Progress Report
-
-Every Sunday, create a GitHub Issue with the "Weekly Report" template:
-
-1. How many videos were published this week?
-2. Top-performing video (views, likes, comments)
-3. Any interesting comments or DMs from viewers?
-4. Content ideas for next week
-5. Any problems or blockers?
-
----
-
-## FAQ
-
-**Q: I made a mistake in an issue, can I fix it?**
-A: Yes, you can edit any issue you created by clicking the "..." menu.
-
-**Q: How do I see the generated videos?**
-A: Videos are stored in `workspace/videos/`. You can also see them on the TikTok account directly.
-
-**Q: Can I suggest changes to the avatar's style or voice?**
-A: Yes! Create a regular issue with your suggestion. The owner will adjust the HeyGen config.
-
-**Q: I have urgent feedback, what do I do?**
-A: WeChat the project owner directly for anything urgent. GitHub Issues are for async workflow.
+- 私有仓库 clone 失败
+- GitHub 权限不对
+- `/daily` 跑不起来
+- 误操作了 `git push`

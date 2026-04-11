@@ -23,6 +23,16 @@ nav_order: 4
 - 你手头事情很多，想让 AI 帮你做优先级
 - 你想给团队一个短而清楚的 daily
 
+## 真正怎么调用
+
+如果你已经 clone 了任意一个 Dayou 仓库：
+
+- Claude Code：直接输入 `/daily`
+- Cursor：直接输入 `/daily`
+- Codex：直接说 `给我一个今天的 /daily`
+
+这三种入口都应该先检查 `gh auth`，再补齐三个仓库，再读 `README / TODO / open Issues`，最后才输出 daily。
+
 ## `/daily` 的标准输出格式
 
 ```text

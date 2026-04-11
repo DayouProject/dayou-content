@@ -1,11 +1,6 @@
----
-name: daily
-description: Generate the shared Dayou daily across mysterious, animal-dayou, and dayou-content.
----
+# Dayou /daily
 
-# /daily
-
-Use the shared Dayou daily workflow instead of the old role-based content-team workflow.
+Follow this workflow exactly.
 
 1. Check `gh auth status`. If GitHub CLI is unavailable or unauthenticated, stop and tell the user what to fix first.
 2. Use `git rev-parse --show-toplevel` to find the current repo root, then use its parent directory as the Dayou workspace.

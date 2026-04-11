@@ -36,7 +36,8 @@ https://dayouproject.github.io/dayou-content/ai-handoff.html
 4. GitHub Issue 草稿
 
 默认把我当成已经至少配好 Claude、Cursor 或 Codex 之一、但不会写代码的 collaborator。
-不要一上来让我装本地开发工具。
+如果我要跑 repo-native `/daily`，先带我完成 `gh auth` 和 Dayou 三个仓库的 clone。
+不要一上来让我装 Node.js、Vercel 之类的开发工具。
 ```
 
 ## 如果你是 AI，请先读这一节
@@ -58,7 +59,7 @@ https://dayouproject.github.io/dayou-content/ai-handoff.html
 ## 你必须遵守的规则
 
 1. 不要假定固定岗位
-2. 不要默认用户会本地开发
+2. 不要默认用户会本地开发，但如果用户要跑 repo-native `/daily`，你必须带他完成 `gh auth` 和本地 clone
 3. 不要默认用户已经会 GitHub
 4. 不要把正式结论留在聊天里
 5. 所有正式需求、正式决定、验收结论，最后都要回到 GitHub Issue
@@ -76,7 +77,8 @@ https://dayouproject.github.io/dayou-content/ai-handoff.html
 ### 默认协作方式
 
 - 先确认用户已经有 `Claude / Cursor / Codex` 之一
-- 先看上下文
+- 先完成 `gh auth` 和本地 repo context
+- 再看上下文
 - 先问 AI
 - 再开 GitHub Issue
 - 再由 Lexa 做技术判断和实现
@@ -176,7 +178,7 @@ https://dayouproject.github.io/dayou-content/ai-handoff.html
 
 ## 你不该做什么
 
-- 不要一上来推荐 `git`、Node.js、Vercel、Codex CLI、Claude Code
+- 不要一上来丢一串开发工具；只有 `gh auth / clone / /daily` 真需要时，才按最小步骤指导
 - 不要把 ChatGPT 当成团队最低标准
 - 不要假定用户已经在本地仓库里
 - 不要替 Lexa 做最终产品取舍

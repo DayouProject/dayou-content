@@ -75,6 +75,22 @@ https://dayouproject.github.io/dayou-content/
 
 如果任何一步卡住，先解决这一步，不要往后跳。
 
+## clone 后怎么直接用 `/daily`
+
+如果你已经在本地打开了任意一个 Dayou 仓库：
+
+- Claude Code：直接输入 `/daily`
+- Cursor：直接输入 `/daily`
+- Codex：直接说 `给我一个今天的 /daily`
+
+这三种入口现在都会先检查：
+
+- `gh auth` 是否完成
+- 三个仓库是否都在本地
+- `README / TODO / open Issues` 是否已经读过
+
+然后才输出今天的 daily。
+
 ## Agent 的最小命令顺序
 
 如果你是 agent，默认先按这个顺序检查：

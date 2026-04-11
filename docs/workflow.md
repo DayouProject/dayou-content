@@ -121,14 +121,14 @@ Lexa 会在 Issue 里给出其中一种判断：
 
 ## 默认不需要做的事
 
-- 不需要 clone 仓库
 - 不需要学 `git`
 - 不需要安装 Node.js / npm
 - 不需要安装 Codex CLI 或 Claude Code
 - 不需要接触 Vercel
 - 不需要本地运行项目
 
-默认模式就是浏览器协作。
+如果你只是提需求、补上下文、开 Issue，默认还是浏览器协作。  
+但如果你要在仓库里直接跑 repo-native `/daily`，就需要先完成 `gh auth`，再把三个 Dayou 仓库 clone 到本地。
 
 ## 一个典型例子
 
